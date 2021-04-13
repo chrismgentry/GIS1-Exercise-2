@@ -1,0 +1,193 @@
+---
+title: "Exercise 2: Getting to know... <br><small>Geographic Information Systems 1 Lab</small></br>"
+author: "GEOG 3150"
+output:
+  html_notebook:
+    df_print: paged
+    rows.print: 10
+    theme: cosmo
+    highlight: breezedark
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+  pdf_document: default
+  html_document:
+    toc: yes
+    df_print: paged
+editor_options:
+  chunk_output_type: inline
+  mode: gfm
+---
+
+```{=html}
+<style type="text/css">
+
+h1.title {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+</style>
+```
+<hr></hr>
+
+For this first exercise you will be examining how you can use various software for geospatial analysis and graphical display of spatial data. Because of the variety and availability of operating systems in use today, each of the exercises in this course can be completed in either **[ArcGIS Pro]{style="color:#ff4500"}**, **[QGIS]{style="color: #006400"}**, or **[R]{style="color: #6495ED"}**. Each of these softwares have their pro's and con's but for simplicity purposes here is a table that might suggest which software would be best for you:
+
+| [ArcGIS Pro]{style="color:#ff4500"} | [QGIS]{style="color: #006400"} | [R]{style="color: #6495ED"} |
+| --- | --- | --- |
+| Available on <u>Windows PC Only</u> | Available for PC, Mac, or Linux (limited) | Available for PC, Mac, Linux, ChromeOS, iOS, or Android |
+| Available by subscription only | Open Source | Open Source |
+| Graphical User Interface with built-in functionality for Python; add-ons available for statistical languages | Graphical User Interface with built-in functionality for Python; use of plug-ins for other languages and analyses | Scripting language, mostly used for statistical purpose; packages expand its use to other applications such as geospatial analyses |
+| Widely used in academia, government, and industry jobs | Widely used in academia and industry | Predominantly used in academia, research, and specialized industry jobs |
+
+For the purposes of this course, you can complete the laboratory exercises in any of these software. There will be drop-down menus in every lab color-coded for the three software. Ultimately, you will have access to all of this material during and after the course and while the steps might be different between each version the outcomes will be the same. So if you choose to complete the course with one software you can always go back and complete the work in another software in your own time.
+
+While all of the software will be available on the computers in McCord 210, if you choose to use **[ArcGIS Pro]{style="color:#ff4500"}** you will need to contact the APSU GIS Center with your student information to obtain a one year license for your personal computer. **[QGIS]{style="color: #006400"}** is available for download using this **[link](https://qgis.org/en/site/forusers/download.html){style="color: #006400"}**. If you are completing the course in **[R]{style="color: #6495ED"}** you will not need to install any software, however you will need a [Google account](https://accounts.google.com/signup/v2/webcreateaccount) and access to the [Chrome browser](https://www.google.com/chrome/). When using **[R]{style="color: #6495ED"}** you will be completing all of the lab exercises in the [Google Colaboratory](https://colab.research.google.com/) and will access everything you need from the exercise pages on _GitHub_.
+
+# The Introduction
+
+_Insert Text Here_
+
+In this exercise you will:
+
+-   _Insert Text Here_
+-   _Insert Text Here_
+-   _Insert Text Here_
+-   _Insert Text Here_
+-   _Insert Text Here_
+
+Software specific directions can be found for each step below. Please submit the answer to the questions and your final map by the due date.
+
+## Step One: The Data
+
+_Insert Text Here_
+
+<details>
+<summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details>
+<summary><big>View directions in <b> [QGIS]{style="color: #006400"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View directions in <b> [R]{style="color: #6495ED"} </b></span></big></summary>
+Before you begin, you will need to open the [Ex2 Colab Notebook]() and insert **tocolab** after _github_ in the URL to open in the _Colab Environment_. As you have seen before, R requires various packages to complete certain analyses.
+
+_Insert Text Here_
+
+</details>
+
+### Question No. 1
+<blockquote>
+_Insert Text Here_
+</blockquote>
+
+## Step Two: The Analyses
+
+_Insert Text Here_
+
+<details>
+<summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details>
+<summary><big>View Directions in <b> [QGIS]{style="color:#006400"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details>
+<summary><big>View Directions in <b> [R]{style="color:#6495ED"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+
+### Question No. 2
+<blockquote>
+_Insert Text Here_
+</blockquote>
+
+## Step Three: The Visualization
+
+_Insert Text Here_
+
+<details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+
+### Question No. 3
+<blockquote>
+_Insert Text Here_
+</blockquote>
+
+## Step Four: The Proposal
+
+_Insert Text Here_
+
+<details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
+
+_Insert Text Here_
+
+</details>
+
+### Question No. 4
+<blockquote>
+_Insert Text Here_
+</blockquote>
+
+# The Decision
+_Insert Text Here_
