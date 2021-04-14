@@ -53,6 +53,8 @@ For the purposes of this course, you can complete the laboratory exercises in an
 
 While all of the software will be available on the computers in McCord 210, if you choose to use **[ArcGIS Pro]{style="color:#ff4500"}** you will need to contact the APSU GIS Center with your student information to obtain a one year license for your personal computer. **[QGIS]{style="color: #006400"}** is available for download using this **[link](https://qgis.org/en/site/forusers/download.html){style="color: #006400"}**. If you are completing the course in **[R]{style="color: #6495ED"}** you will not need to install any software, however you will need a [Google account](https://accounts.google.com/signup/v2/webcreateaccount) and access to the [Chrome browser](https://www.google.com/chrome/). When using **[R]{style="color: #6495ED"}** you will be completing all of the lab exercises in the [Google Colaboratory](https://colab.research.google.com/) and will access everything you need from the exercise pages on _GitHub_.
 
+More information for each software and the steps to complete this exercise can be found below. Be sure to follow the color-coded drop-down for the specific software you are using for the lab. 
+
 # The Introduction
 
 _Insert Text Here_

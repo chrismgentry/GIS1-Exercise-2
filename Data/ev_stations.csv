@@ -7,6 +7,7 @@ California,CA,32601
 Colorado,CO,3042
 Connecticut,CT,1165
 Delaware,DE,200
+District of Columbia,DC,500
 Florida,FL,5102
 Georgia,GA,3508
 Hawaii,HI,740
@@ -18,7 +19,7 @@ Kansas,KS,892
 Kentucky,KY,369
 Louisiana,LA,327
 Maine,ME,507
-Maryland,MD,2583
+Maryland,MD,2333
 Massachusetts,MA,3537
 Michigan,MI,1526
 Minnesota,MN,1170
@@ -44,7 +45,7 @@ Tennessee,TN,1309
 Texas,TX,4668
 Utah,UT,1659
 Vermont,VT,786
-Virginia,VA,2278
+Virginia,VA,2028
 Washington,WA,3543
 West Virginia,WV,244
 Wisconsin,WI,819
