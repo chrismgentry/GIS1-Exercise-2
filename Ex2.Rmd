@@ -48,6 +48,7 @@ For this first exercise you will be examining how you can use various software f
 | Available by subscription only | Open Source | Open Source |
 | Graphical User Interface with built-in functionality for Python; add-ons available for statistical languages | Graphical User Interface with built-in functionality for Python; use of plug-ins for other languages and analyses | Scripting language, mostly used for statistical purpose; packages expand its use to other applications such as geospatial analyses |
 | Widely used in academia, government, and industry jobs | Widely used in academia and industry | Predominantly used in academia, research, and specialized industry jobs |
+Help available at [ESRI.com](https://pro.arcgis.com/en/pro-app/latest/help/main/welcome-to-the-arcgis-pro-app-help.htm) and through various outlets via a google search | Help available at [QGIS.org](https://docs.qgis.org/3.16/en/docs/user_manual/) and through sites like stackoverflow.com or other sites via google search | Help available through individual package [documentation](https://cran.r-project.org/web/packages/available_packages_by_name.html) and sites like stackoverflow.com or other sites via google search
 
 For the purposes of this course, you can complete the laboratory exercises in any of these software. There will be drop-down menus in every lab color-coded for the three software. Ultimately, you will have access to all of this material during and after the course and while the steps might be different between each version the outcomes will be the same. So if you choose to complete the course with one software you can always go back and complete the work in another software in your own time.
 
@@ -57,15 +58,18 @@ More information for each software and the steps to complete this exercise can b
 
 # The Introduction
 
-_Insert Text Here_
+The Tennessee Valley Authority (TVA) and Tennessee Department of Environment and Conservation (TDEC) are considering a partnership to increase the number of electric vehicle charging stations across the state. With destinations such as Nashville, Memphis, Gatlinburg and the Great Smoky Mountains, Bristol Motor Speedway, Signal Mountain and the Tennessee Aquarium, tourism is a major part of the state's economy. So accommodating residents and visitors with electric vehicles as well as creating a network for those traveling the states major interstates (I-65, I-40, I-24, I-75, etc.) is of utmost importance. 
+
+TDEC says this network of charging stations will also promote electric vehicle growth by giving drivers confidence they will have easy access to refueling while away from home, eliminating so-called “range anxiety” that keeps many consumers from considering electric vehicles as viable transportation. TVA says electric vehicle adoption will spur jobs and economic investment in the region, keep refueling dollars in the local economy, reduce the regions largest source of carbon emissions, and save drivers and fleets money.
+
+So TVA and TDEC have asked you to develop a map showing the number of public electric vehicle charging stations in the continental United States. This will help them understand what the nations current infrastructure looks like and how Tennessee currently compares to neighboring states. It will also help TVA and TDEC determine approximately how many additional stations they should add. 
 
 In this exercise you will:
 
--   _Insert Text Here_
--   _Insert Text Here_
--   _Insert Text Here_
--   _Insert Text Here_
--   _Insert Text Here_
+-   Navigate software used for geospatial analysis
+-   Examine attributes of various datasets
+-   Learn how to graphically display spatial data
+-   Create a cartographically sound product
 
 Software specific directions can be found for each step below. Please submit the answer to the questions and your final map by the due date.
 
