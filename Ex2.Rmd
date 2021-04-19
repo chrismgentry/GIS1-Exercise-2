@@ -56,6 +56,57 @@ While all of the software will be available on the computers in McCord 210, if y
 
 More information for each software and the steps to complete this exercise can be found below. Be sure to follow the color-coded drop-down for the specific software you are using for the lab. 
 
+<details>
+<summary><big>View information for <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details>
+<summary><big>View information for <b> [QGIS]{style="color: #006400"} </b></big></summary>
+
+_Insert Text Here_
+
+</details>
+<hr></hr>
+
+<details><summary><big>View information for <b> [R]{style="color: #6495ED"} </b></span></big></summary>
+You will be completing the **R** portion of each exercise using the _[Google Colaboratory Executable Environment](https://colab.research.google.com/)_. Colaboratory, or _"colab"_ for short, is based on the popular Jupyter Notebooks and allows you to write and execute **R** or _Python_ in your browser, with:
+
+- Zero configuration required
+- Free access to GPUs
+- Easy sharing
+
+Each _colab_ notebook is separated into code cells and text cells. A code cell is used to write and execute a script interactively. Each text cell uses simple [markdown](https://www.markdownguide.org/) syntax for creating plain text information. You can easily share the notebook like other Google Drive based documents by clicking the "Share" link in the upper right-hand portion of the window.
+
+Before beginning each exercise using **R**, you will need to open the [Exercise Colab Notebook](https://githubtocolab.com/chrismgentry/GIS-Exercise-2/blob/main/GIS1_EX2.ipynb) and alter the URL to view/edit the file in colab. To do this you will navigate to the exercise's GitHub page; in this case [https://github.com/chrismgentry/GIS1-Exercise-2](https://github.com/chrismgentry/GIS1-Exercise-2). In the list of folders and files you will find a file that will always be identified as _GIS1_EX_ followed by the exercise number and a _.ipynb_ file extension. So for this exercise it will be [GIS1_EX2.ipynb](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/GIS1_EX2.ipynb)
+
+<p align="center"><img src= "Images/r-github-ipy-location.png" alt="Finding the Google Colab file on GitHub" width="743" height="322"></p>
+<br>
+When you locate the file, click on the name to open the _ipy_ notebook. In the resulting window, click on the URL and insert **tocolab** immediately after _github_ in the address. So the new URL for this exercise should now read:<br> ```https://githubtocolab.com/chrismgentry/GIS-Exercise-2/blob/main/GIS1_EX2.ipynb``` 
+
+<p align="center"><img src= "Images/r-github-tocolab.png" alt="Converting ipy file to colab" width="765" height="395"></p>
+<br>
+Click enter/return and the file should now open inside of _Colab_. Your screen might have a slightly different appearance, but you should see the Exercise 2, GIS 1 header indicating you are in the correct notebook.
+
+<p align="center"><img src= "Images/r-colab.png" alt="Converting ipy file to colab" width="760" height="174"></p>
+<br>
+Each time you open these colab notebooks, or if you have not interacted with the notebook for an extended period of time, you will need to make sure the environment is connected and all of the sample script has been run. To do this go to _Runtime > Run all_ (or click CRTL+F9) and run the notebook. This may take a moment to complete so be patient until the last code cell has been executed. You should see a green check mark with an allocation of RAM and Disk as shown by horizontal bars which will indicate you are connected. In each section of code there is a **Run cell** &nbsp;<img src= "Images/r-colab-run-code.png" alt="Run cell button" width="15" height="15"> button that will allow you to run the individual code cells. This button will have a rotating loading symbol <img src= "Images/r-colab-loading.png" alt="Run cell button" width="15" height="15"> while the code cell is being executed. Once it is complete the box will return to the run state and there may be an output visible depending on the script. You can add your own text or code cells to a notebook simply by moving your cursor slowly over the notebook to reveal the code/text option bar or by going to _Insert > Code cell/Text cell_.
+
+<p align="center"><img src= "Images/r-colab-code-text.png" alt="Adding Text or Code Blocks" width="764" height="18"></p>
+<br>
+By clicking within each code or text cell you can edit the contains and adjust the properties using the various preset option controls.
+
+<p align="center"><img src= "Images/r-colab-block-settings.png" alt="Edit block properties" width="762" height="200"></p>
+<br>
+You should practice adding and removing cells, editing their content, and rearranging the order of the cells. This will help familiarize you with notebook tools and allow you to manipulate notebooks in these exercises and create your own notebooks in the future.
+
+For each new exercise there will be a colab notebook available. Within the notebook will be sample code for you to run, code cells for you to complete as part of the exercise and questions to be answered within labeled text cells. Detailed directions will be available on the individual exercise webpage. Each completed exercise will have completed code and question sections and the notebook link shared for a grade.
+
+</details>
+
 # The Introduction
 
 The Tennessee Valley Authority (TVA) and Tennessee Department of Environment and Conservation (TDEC) are considering a partnership to increase the number of electric vehicle charging stations across the state. With destinations such as Nashville, Memphis, Gatlinburg and the Great Smoky Mountains, Bristol Motor Speedway, Signal Mountain and the Tennessee Aquarium, tourism is a major part of the state's economy. So accommodating residents and visitors with electric vehicles as well as creating a network for those traveling the states major interstates (I-65, I-40, I-24, I-75, etc.) is of utmost importance. 
@@ -82,28 +133,72 @@ _Insert Text Here_
 
 _Insert Text Here_
 
+Question No. 1
+<blockquote>
+_Insert Text Here_
+</blockquote>
+
 </details>
 <hr></hr>
 
 <details>
-<summary><big>View directions in <b> [QGIS]{style="color: #006400"} </b></big></summary>
+<summary><big>View Directions in <b> [QGIS]{style="color:#006400"} </b></big></summary>
 
 _Insert Text Here_
+
+Question No. 1
+<blockquote>
+_Insert Text Here_
+</blockquote>
 
 </details>
 <hr></hr>
 
-<details><summary><big>View directions in <b> [R]{style="color: #6495ED"} </b></span></big></summary>
-Before you begin, you will need to open the [Ex2 Colab Notebook]() and insert **tocolab** after _github_ in the URL to open in the _Colab Environment_. As you have seen before, R requires various packages to complete certain analyses.
+<details>
+<summary><big>View Directions in <b> [R]{style="color:#6495ED"} </b></big></summary>
 
-_Insert Text Here_
+For each exercise in **R** you will need to load various packages that are used to complete analyses and graphical output. Generally these packages will be preloaded in the colab notebook however in subsequent labs you may need to install certain packages to complete the exercises. To install a package in **R** you use the following function where ("x") is the name of a specific package.
+
+```
+install.packages("x")
+```
+Once the package has been installed, it will need to be loaded using a similar function:
+
+```
+library("x")
+```
+In the colab notebook for this exercise you will see where three packages _tidyverse, maps, and ggsn_ were installed and loaded. Now that you have the packages required for the exercise you will need to add the data. For this lab the data consists of state names, abbreviations, and the number of electric vehicle recharing stations. To avoid the need to download the data, you will the ```read.csv()``` function and a URL to import the data. Using the ```head()``` function will allow you to view the first few lines of any dataset.
+
+```{r data, echo=TRUE, message=FALSE, warning=FALSE}
+evs <- read.csv('https://raw.githubusercontent.com/chrismgentry/GIS1-Exercise-2/main/Data/ev_stations.csv')
+head(evs)
+```
+
+In the script above you will see the use of &nbsp;**<-**. This is an operator used to create an object that can be used in later steps. If the script was written as ```read.csv('https://raw.githubusercontent.com/chrismgentry/GIS1-Exercise-2/main/Data/ev_stations.csv')``` the dataset would have been read and immediately displayed on the screen. However, it would not have been available for subsequent analyses. In colab, you can create your own code block and test it out to see the results. Since you need this information for later, it is important to use &nbsp;**<-** to create an object out of the imported data. In this, and future exercises, you will see that operator used frequently to create objects for analysis. 
+
+In order to create a map of electrical vehicle charging stations per state you need to obtain information for the states and create a new object. The ```tidyverse``` package is a retainer for a number of individual packages including the _Grammar of Graphics_ or _ggplot2_ package. This package will frequently be used to display your data, but it also contains geographic information for the US. You can obtain that information by using the ```map_data``` function. In a new code block, you can use ```?map_data``` to view help information on the function. Alternatively you can view the documentation for any package or function by searching the package or function name and cran _(Comprehensive R Archive Network)_. For this function you would search ```map_data cran``` and the first link is likely to be the [RDocumentation page](https://www.rdocumentation.org/packages/ggplot2/versions/3.3.3/topics/map_data) for the function. Within this documentation you will find the arguments available for the function and example scripts. So to create an object that contains information for the continental US you can use:
+
+```{r states, echo=TRUE, message=FALSE, warning=FALSE}
+us <- map_data('state')
+```
+
+Using the _Grammar of Graphics_ package, ```ggplot2```, you can create a visualization of this data. Here is that script:
+
+```{r states map, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(us) + 
+  geom_polygon(aes(x=long, y=lat, group=group), color = "white")
+```
+In this script you identified that you wanted to use ```ggplot``` to visualize the **us** object you created in the previous step. Next ```ggplot``` needs to know what sort of object to draw. This is done by using the ```geom_``` function followed by a type of geometry. They include point, line, polygon and other geometries such as histograms, boxplots, violin plots for statistics, or contours, rasters, and tiles for three dimensional data. So for this step you used ```geom_polygon```. Next, ```ggplot``` needs to know how the data should be displayed. If you create a new code block and type ```str(us)``` you can see the structure of the data and a few of the variables. You will notice the dataset contains _long_ (longitude), _lat_ (latitude), _group_, _order_, _region_ (the state names), and _subregion_. So in ```ggplot``` you provide a series of aesthetics using ```aes()``` to direct ```ggplot``` on how to display the data. In this case, ```x = long, y = lat```, and you need to tell it to organize the groups by the category group. If you leave out _group_ for this specific script, ```ggplot``` will be unsure what order to draw the polygons and your map will not appear correctly. ```color = "white"``` tells ```ggplot``` to use white borders for the individual states. What do you think would happen if you change the word **_color_** to **_fill_**&nbsp;? In the resulting image, ```ggplot``` used the information from your aesthetics to draw the polygons and automate labels for the x and y axes. In a later step you will learn how to customize those labels.
+
+It may seem as if this is a difficult way to view the data. In other software with a graphical user interface (GUI) you would most likely click open, navigate to the folder containing the data, double-click on that dataset, and then it would appear on your screen. Essentially, every time you click "open" on a GUI interface, it is executing a specific set of scripts to 1.) open the navigation window, 2.) allow the selected file to be imported, and 3.) then display the information on your screen. What you did above in three lines of code was to tell ```ggplot``` to 1.) create an object called _us_ and 2.) display it on the screen with some specific parameters. The benefit of completing this in **R** versus something with a GUI interface is, if you had three more similar datasets to view, you would simply change _US_ to another object and re-run the script. To repeat the process in a GUI interface you would need to repeat all of the steps from the beginning. This might not seem like much for three steps, but what if your visualization had twenty steps, as many do? In **R** you would still simply change the dataset and run the same script, but in other programs you would need to repeat the same twenty steps for each dataset. Additionally, if a colleague wanted to display some data in the same way, you can either copy and paste the code or type out each of the twenty steps with directions. Which of these seems to be more consistently repeatable? Once you begin to understand the syntax (order or arrangement of words and phrases to form proper scripts) you will be more easily able to interpret sample scripts and fix errors in your own code.
+
+<big><b>Question No. 1</b></big>
+<blockquote>
+You used ```ggplot(us) + geom_polygon(aes(x=long, y=lat, group=group), color = "white")``` to create the visualization in this step. What script would you use to make the same map but with _black_ borders and _blue_ states? Add a code cell below this one, type the script, and run it to view the output.
+<small>Hint: color = ".....", fill = "....."</small>
+</blockquote>
 
 </details>
-
-### Question No. 1
-<blockquote>
-_Insert Text Here_
-</blockquote>
 
 ## Step Two: The Analyses
 
@@ -128,14 +223,32 @@ _Insert Text Here_
 <details>
 <summary><big>View Directions in <b> [R]{style="color:#6495ED"} </b></big></summary>
 
-_Insert Text Here_
+Now that you have datasets for electric vehicle charging stations (object = **evs**) and the continental US (object = **us**), you need to combined that data to allow for the states to be color coded based on the number of charging stations per state. To do this you will use a function called ```merge``` from the base **R** functions that will allow you to combine the information from the **evs** and **us** into a single dataset that contains information from both based on a common variable. So to start you will need to determine what variable(s) are contained within each dataset. You have seen how to examine datasets using both ```head()``` and ```str()``` already in this exercise. Create a new code block and examine the structure of each dataset. You will see that there is a column for state name in each except they are labeled differently. This is important information you will need to properly ```merge``` the datasets.
+
+To do this you will first create an object (**<-**) with a new name, then with the ```merge``` function set the following arguments:
+
+- x, which is the first data set
+- y, which is the second dataset
+- by.x, identifies the column to use for the merge in x
+- by.y, identifies the column to use for the merge in y
+- all = TRUE, which tells the function to retain all data
+
+So your final script will be:
+
+```{r merged datasets, echo=TRUE, message=FALSE, warning=FALSE}
+states <- merge(x = us, y = evs, by.x = "region", by.y = "state", all = TRUE)
+head(states)
+```
+
+Now you will see the columns for **evs** included in the **us** dataset. This new dataset will be what you use to visualize the information in the next step.
+
+<big><b>Question No. 2</b></big>
+<blockquote>
+Using ```sum(states)``` in a new code cell, what are the largest and smallest number of electric vehicle charging stations?
+</blockquote>
 
 </details>
 
-### Question No. 2
-<blockquote>
-_Insert Text Here_
-</blockquote>
 
 ## Step Three: The Visualization
 
@@ -157,18 +270,131 @@ _Insert Text Here_
 
 <details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
 
-_Insert Text Here_
+With this new dataset you are now ready to create a map to examine the distribution of electric vehicle charging stations across the country. In the step one you used a very simple script to display the **us** data.
+
+```
+ggplot(us) + 
+  geom_polygon(aes(x=long, y=lat, group=group), color = "white")
+```
+
+A similar script would allow you to quickly visualize the data ```ggplot(states) + geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white")```, however, you need to add a number of elements in order to create a map such as a scale bar, north arrow, title, etc. Additionally, you can customize other components to provide a better overall visualization.
+
+Earlier in the notebook we installed the ```ggsn``` package. This package allows you to add "north symbols and scale bars for maps created with 'ggplot2' or 'ggmap'." So you can build on the script above to create a map of the information in the **states** dataset. To begin, run the script above with the added **fill** argument to see the outcome:
+
+```{r basic evs map, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white")
+```
+
+One thing you will notice is that the categories are very difficult to distinguish. Because you have wide ranging data in the _evs_count_ column only the largest value is showing. A simple fix to this would be to take the common logarithm of the data to standardize the data by removing the skewness towards large values. The function ```scale-viridis``` scales the data and provides a color map designed to be perceived by viewers with common forms of color blindness. So you can add ```scale_fill_viridis_c(option = "D", trans = "log10")``` to the script above where:
+
+- scale_fill_viridis_c is a fill pattern for continuous data
+- option = "D" is the default color option
+  - There are five color options available with this function
+    - A = magma
+    - B = inferno
+    - C = plasma
+    - D = viridis
+    - E = cividis
+- trans = "log10" transforms the data using common logarithm, other options are available; see documentation
+
+The new script should now look like this:
+
+```{r log evs map, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + 
+  geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white") +
+  scale_fill_viridis_c(option = "D", trans = "log10")
+```
+
+Now that you are able to visualize the separations in the data you can add additional information. You can start with customizing the labels, map title, and legend title. This can all be completed by adding a single line of code containing all of the text information for those items:
+
+```{r log map w titles, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + 
+    geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white") +
+  scale_fill_viridis_c(option = "D", trans = "log10") + 
+  labs(x="Longitude",y="Latitude", title="Number of Electric Vehicle Charging Stations Per State", fill = "No. of Stations")
+```
+
+Feel free to edit the label names and the color option in the script to provide your own customizations. Next you need to add a scale bar and north arrow. To view the available options for the north arrow type ```northSymbols()``` into a new code block. The numeric values below each symbol will be used in the script to identify the specific style you choose. Because the north arrow, ```north```, is specifically related to the map data you need to provide the following arguments:
+
+- dataset
+- symbol, identified by the numerical value from ```northSymbols()```
+- location, indicating where to base the location on the map
+- anchor, coordinates for the symbol position on the map (based off the location)
+- scale, the symbol size as a proportion of the map size 
+
+So your new script will look like:
+
+```{r map titles north, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + 
+  geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white") +
+  scale_fill_viridis_c(option = "D", trans = "log10") + 
+  labs(x="Longitude",y="Latitude", title="Number of Electric Vehicle Charging Stations Per State", fill = "No. of Stations") +
+  north(states, location = "bottomleft", scale = 0.05, symbol = 12, anchor = c(x= -70, y= 25))
+```
+In this example, ```location = "bottomleft"``` means the location of the _north arrow_ will be based from the bottom left of the symbol and ``anchor = c(x = -70, y = 25)``` is the geographic location on the map to draw the symbol. For example, if the _anchors_ were set at -100 and 40 the symbol would be draw on the Nebraska/Kansas border. Feel free to adjust the anchor points to draw the north arrow in your preferred location.
+
+Now you need to add a scale bar. Many of the arguments used for the north arrow are duplicated for ```scalebar```
+
+- dataset
+- location, indicating where to base the location on the map
+- anchor, coordinates for the symbol position on the map (based off the location)
+- distance for each unit of the scale bar
+- unit of measurement such as mi, km, etc.
+- transform (TRUE/FALSE), assumes the coordinates are in decimal degrees
+- model, choice of ellipsoid; which will be discussed later in the semester
+- st.size, scale bar size
+- st.dist, distance between the scale bar and the scale bar’s text, as a proportion of the y axis
+
+```{r map titles north scale, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + 
+  geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white") +
+  scale_fill_viridis_c(option = "D", trans = "log10") + 
+  labs(x="Longitude",y="Latitude", title="Number of Electric Vehicle Charging Stations Per State", fill = "No. of Stations") +
+  north(states, location = "bottomleft", scale = 0.05, symbol = 12, anchor = c(x= -70, y= 25)) + 
+  scalebar(states, dist = 250, dist_unit = "mi", transform = TRUE, model = "WGS84", location = "bottomleft", st.dist = 0.05, st.size = 2, anchor = c(x=-125,y=27))
+```
+
+As with all of the other customizations above, feel free to adjust the units, distance, text distance, and size based on your own style.
+
+Finally, you will need to add text to the map to indicate the name of the person who created the map and the date. In the future you will possibly include references or other text based information. There are a number of different ways you will explore for adding text information to your maps, such as ```caption = ``` in labs, but for this example you will use ```annotate()```. Similar to the north arrow and scale bar, there will be a
+
+- _x_ and _y_ argument to set the location
+- size to indicate the font size
+- label for the text you wish to include; to create a character return to move text to a new line you should use "\\n" where you want the text to move to a new line
+
+Your final script should now look similar to this:
+
+```{r final map, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(states) + 
+  geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white") +
+  scale_fill_viridis_c(option = "D", trans = "log10") + 
+  labs(x="Longitude",y="Latitude", title="Number of Electric Vehicle Charging Stations Per State", fill = "No. of Stations") +
+  north(states, location = "bottomleft", scale = 0.05, symbol = 12, anchor = c(x= -70, y= 25)) + 
+  scalebar(states, dist = 250, dist_unit = "mi", transform = TRUE, model = "WGS84", location = "bottomleft", st.dist = 0.05, st.size = 2, anchor = c(x=-125,y=27)) +
+  annotate("text", x = -90, y = 25, label = "Your Name \n The Date", size = 2)
+```
+
+There is an exhaustive amount of modifications that can be applied to the map above, but for now you have the minimum information required to create a map of similar kinds of data. In future exercises you will use various function to customize the look of your maps. 
+
+<b><big>Question No. 3</big></b>
+<blockquote>
+How does the _dist = _ &nbsp;argument in the ```scalebar``` function relate specifically to the distance of the scale bar on your map? How would changing the value alter the appearance?
+</blockquote>
 
 </details>
 
-### Question No. 3
-<blockquote>
-_Insert Text Here_
-</blockquote>
 
-## Step Four: The Proposal
+## Step Four: Your Turn
 
-_Insert Text Here_
+After a rash of severe weather over the past few years the Montgomery County Emergency Management Agency has asked you to provide a map detailing the number of reported tornadoes in each Tennessee county over the past several decades. This information will be shared with neighboring counties in middle Tennessee as a part of severe weather education campaign designed to inform communities about the risk of tornadoes in the region. The map should include all of the elements included on your previous map of electric vehicle charging stations such as:
+
+- Title
+- Scale
+- North Arrow
+- Legend
+- Name/Date of Cartographer
+
+Software specific directions can be found for each step below. Please submit the answer to the questions you answered above as well as your final tornado map by the due date.
 
 <details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
 
