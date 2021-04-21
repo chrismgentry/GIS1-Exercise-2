@@ -40,11 +40,11 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
 ```
 <hr></hr>
 
-For this first exercise you will be examining how you can use various software for geospatial analysis and graphical display of spatial data. Because of the variety and availability of operating systems in use today, each of the exercises in this course can be completed in either **[ArcGIS Pro]{style="color:#ff4500"}**, **[QGIS]{style="color: #006400"}**, or **[R]{style="color: #6495ED"}**. Each of these softwares have their pro's and con's but for simplicity purposes here is a table that might suggest which software would be best for you:
+For this first exercise you will be examining how you can use various software for geospatial analysis and graphical display of spatial data. Because of the variety and availability of operating systems in use today, each of the exercises in this course can be completed in either **[ArcGIS Pro]{style="color:#ff4500"}**, **[QGIS]{style="color: #006400"}**, or **[R]{style="color: #6495ED"}**. Each of these software have their pro's and con's but for simplicity purposes here is a table that might suggest which software would be best for you:
 
 | [ArcGIS Pro]{style="color:#ff4500"} | [QGIS]{style="color: #006400"} | [R]{style="color: #6495ED"} |
 | --- | --- | --- |
-| Available on <u>Windows PC Only</u> | Available for PC, Mac, or Linux (limited) | Available for PC, Mac, Linux, ChromeOS, iOS, or Android |
+| Available on <u>Windows PC Only</u> | Available for PC, Mac, or Linux (limited) | Available for PC, Mac, Linux, ChromeOS, iOS, or Android via web modern browser|
 | Available by subscription only | Open Source | Open Source |
 | Graphical User Interface with built-in functionality for Python; add-ons available for statistical languages | Graphical User Interface with built-in functionality for Python; use of plug-ins for other languages and analyses | Scripting language, mostly used for statistical purpose; packages expand its use to other applications such as geospatial analyses |
 | Widely used in academia, government, and industry jobs | Widely used in academia and industry | Predominantly used in academia, research, and specialized industry jobs |
@@ -200,7 +200,7 @@ You used ```ggplot(us) + geom_polygon(aes(x=long, y=lat, group=group), color = "
 
 </details>
 
-## Step Two: The Analyses
+## Step Two: The Analysis
 
 _Insert Text Here_
 
@@ -240,7 +240,7 @@ states <- merge(x = us, y = evs, by.x = "region", by.y = "state", all = TRUE)
 head(states)
 ```
 
-Now you will see the columns for **evs** included in the **us** dataset. This new dataset will be what you use to visualize the information in the next step.
+Now you will see the columns for **evs** and **abbreviation** included in the **us** dataset. This new dataset will be what you use to visualize the information in the next step.
 
 <big><b>Question No. 2</b></big>
 <blockquote>
@@ -412,14 +412,50 @@ _Insert Text Here_
 
 <details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
 
-_Insert Text Here_
+This portion of the exercise is meant to reinforce the skills you learned in the part of the lab. The steps you will take to complete your final map will be to:
+
+1. Create an object from the tornadoes dataset
+2. Obtain a dataset of Tennessee counties
+3. Determine which columns can be used to ```merge``` the datasets
+4. Map out the data using ```ggplot```
+
+
+To begin the exercise you will need this URL to the comma delimited dataset:
+
+https://raw.githubusercontent.com/chrismgentry/GIS1-Exercise-2/main/Data/tn_tornadoes.csv
+
+This data represents the number of reported tornadoes in each county from 1950-2020. As in step one of the exercise, you can use the **<-** operator to create a new object and the ```read.csv()``` function with the link to the dataset to import the data. Remember you can use ```head()``` or ```str()``` to examine the information.
+
+To obtain county information for the State of Tennessee you should use the following script:
+
+```{r tennessee, echo = TRUE, message=FALSE, warning=FALSE}
+tn <- map_data('county', region = "tennessee")
+```
+
+If you search for _map_data_ in the **ggplot2** [documentation](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf) you will find an example of a script used to isolate information for the State of Iowa that can be adapted for any state in the dataset. Remember when working with scripts, Google is your friend! All it requires is asking the correct question to find some example code online that can help guide you. There are numerous possible answers to the same problem so don't hesitate to try other methods.
+
+Using the example code from step two, you will need to ```merge``` the two datasets into a new object based on a common variable such as <small><i>Hint...hint</i></small> county name.
+
+Finally, by adapting the ```ggplot``` code in step four, you can map the information for _tornado_count_ for each county in Tennessee. In order to limit the scope of your map to just the state you should add the following script to your modified ```ggplot``` code from above:
+
+```
+coord_fixed(xlim = c(-90,-82), ylim = c(35, 37))
+```
+
+The ```coord_fixed()``` function limits the axes based on specified values. The values are based on the units of measure of the data. In this can you see where the **x axis** is limited (_xlim_) from -82&deg; to -90&deg; west longitude and the **y axis** is limited (_ylim_) from 35&deg; to 37&deg; north latitude. If you omit this script your map will likely have a "smashed" appearance. For creating maps in **R** it is generally advisable to set the _x_ and _y_ coordinates to ensure proper display of your data. Remember you will need to adjust the anchor points of your _name and date_ text, _north arrow_ and _scale bar_ to fit the current map view. Additionally, the _title_ and _legend text_ should also reflect the information depicted on your map.
+
+<big><b>Question No. 4</b></big>
+<blockquote>
+Which county had the highest number of reported tornadoes?<br>
+Type ```subset(tn_tornadoes, tornado_count == max(tornado_count))``` into a new code cell or use Google to search for a county map of Tennessee to determine county locations on your map.<br> 
+<small>Hint: Replace **tn_tornadoes** in the code above with the object you created by merging the tornado and counties datasets.</small>
+</blockquote>
 
 </details>
 
-### Question No. 4
-<blockquote>
-_Insert Text Here_
-</blockquote>
+# The Write-Up
+The Montgomery County Emergency Management Agency has asked you to provide a map detailing the number of reported tornadoes in each Tennessee county over the past several decades. Based on the map you create above, complete a lab write-up that addresses the following questions:
 
-# The Decision
-_Insert Text Here_
+- Provide the names of the five (5) counties that recorded the most tornadoes during that time frame
+- Describe which regions of Tennessee had the fewest reported tornadoes 
+- Inform MCEMA which metropolitan regions could be most impacted by future severe weather events
