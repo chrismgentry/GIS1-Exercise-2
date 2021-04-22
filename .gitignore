@@ -7,3 +7,8 @@
 Images/
 Ex2.nb.html
 previous_index.html
+*.cpg
+*.dbf
+*.prj
+*.shp
+*.shx
