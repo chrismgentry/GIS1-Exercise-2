@@ -59,7 +59,7 @@ More information for each software and the steps to complete this exercise can b
 <details>
 <summary><big>View information for <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
 
-_Insert Text Here_
+<b>[ArcGIS Pro]{style="color:#ff4500"}</b> is a proprietary software from [ESRI](https://www.esri.com/en-us/home). Student access is available in McCord 210 and several other computer labs on campus. If you wish to obtain the software for use on your personal computer (Windows-based PC only) you will need to contact the [APSU GIS Center](https://www.apsugis.org/) at 601 N 2nd St, Clarksville, TN 37040, (931) 221-7500. Please have your APSU student ID and A# available for verification prior to obtaining a license. Please contact the GIS Center if you have any issues downloading or installing the software.
 
 </details>
 <hr></hr>
@@ -67,13 +67,19 @@ _Insert Text Here_
 <details>
 <summary><big>View information for <b> [QGIS]{style="color: #006400"} </b></big></summary>
 
-_Insert Text Here_
+If you will be using <b>[QGIS]{style="color: #006400"}</b> for the exercises you will need to have the software installed on your computer. **QGIS** is available for PCs, Mac, and Linux computers. You can find the appropriate download for your operating system here:
+
+- [PC version, 3.16](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.6-1-Setup-x86_64.exe)
+- [macOS version, 3.16](https://qgis.org/downloads/macos/qgis-macos-ltr.dmg)
+- [Linux version, 3.x](https://qgis.org/en/site/forusers/alldownloads.html#linux)
+
+When installing on _macOS_ for the first time you may need to go to _Systems Preferences > Security and Privacy_ and on the _General_ tab "Allow apps downloaded from" _App Store and identified developers_ and click _Open Anyway_. Please contact your instructor if you have any issues downloading or installing the software.
 
 </details>
 <hr></hr>
 
 <details><summary><big>View information for <b> [R]{style="color: #6495ED"} </b></span></big></summary>
-You will be completing the **R** portion of each exercise using the _[Google Colaboratory Executable Environment](https://colab.research.google.com/)_. Colaboratory, or _"colab"_ for short, is based on the popular Jupyter Notebooks and allows you to write and execute **R** or _Python_ in your browser, with:
+You will be completing the <b>[R]{style="color: #6495ED"}</b> portion of each exercise using the _[Google Colaboratory Executable Environment](https://colab.research.google.com/)_. Colaboratory, or _"colab"_ for short, is based on the popular Jupyter Notebooks and allows you to write and execute **R** or _Python_ in your browser, with:
 
 - Zero configuration required
 - Free access to GPUs
@@ -144,7 +150,15 @@ _Insert Text Here_
 <details>
 <summary><big>View Directions in <b> [QGIS]{style="color:#006400"} </b></big></summary>
 
-_Insert Text Here_
+The purpose of this exercise is to help familiarize you with the [QGIS]{style="color:#006400"} program. With this software, you will have the ability to view, create, and edit geographic data, query spatial data, examine spatial relationships, and create publishable maps. In these directions I will post images from both PC (on the left) and macOS (on the right) for each step. While your set-up may differ slightly, the configurations and layout of the tools should be similar.
+
+To start the QGIS program press the _Start Menu > QGIS_ or launch the application from the _Mac Launchpad_. It might be beneficial to create a shortcut on the desktop or add it to your dock for quicker access in the future. As the program loads, the opening screen will be extremely useful to you while working on future projects, however, for this exercise we will select **New Empty Project**.
+
+<p align="center"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
+
+The screen depicted below is separated into two sections. To the left there is the _Browser_ and _Layers_ sections, and on the right is the _Map Canvas_. Your version may vary slightly from the images. There are a number of ways to add data, but in this example we are going to use the browser window to connect to our ESRI Data folder.
+
+<p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
 
 Question No. 1
 <blockquote>
