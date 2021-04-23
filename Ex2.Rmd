@@ -37,11 +37,6 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
   text-align: center;
 }
 
-span.tab2{padding: 0 20px;}
-span.tab4{padding: 0 40px;}
-span.tab6{padding: 0 60px;}
-span.tab8{padding: 0 80px;}
-
 </style>
 ```
 <hr></hr>
@@ -170,7 +165,7 @@ The screen depicted below is separated into two sections. To the left there is t
 
 <p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" style="width:100%"></p><br>
 
-In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. If there is a pop-up window that mentions transformations go ahead and click OK. While the look of the US in this dataset is less than ideal, the purpose of this exercise is to ensure you know how to display data and basic tools for navigating the software. Transformations will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
+In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. You will be able to add all types of data in this same way. If there is a pop-up window that mentions transformations go ahead and click OK. While the look of the US in this dataset is less than ideal, the purpose of this exercise is to ensure you know how to display data and basic tools for navigating the software. Transformations will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
 
 <p align="center"><img src= "Images/qgis-transformations.png" alt="QGIS Start Screen" style="width:100%"></p><br>
 
@@ -268,7 +263,7 @@ You used ```ggplot(us) + geom_polygon(aes(x=long, y=lat, group=group), color = "
 
 ## Step Two: The Analysis
 
-_Insert Text Here_
+In this step you will organize and display the data in order to prepare it for the final visualization. 
 
 <details>
 <summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
@@ -283,7 +278,7 @@ _Insert Text Here_
 
 Now that you have the data displayed on the screen and understand how to access the underlying data, you need to customize the view so you can see the spatial distribution of electric vehicle charging stations in the US. To begin you will need to control-click (macOS) or right-click (PC) on the **ev_data** in your _layers_ and click on properties.
 
-<p align="center"><img src= "Images/qgis-rcproperties.png" alt="Right Click Properties" width="264" height="270"></p><br>
+<p align="center"><img src= "Images/qgis-rcproperties.png" alt="Right Click Properties" style="width:60%"></p><br>
 
 In the resulting window you will need to go to the **Symbology** tab (<i>1.</i>) in the left-hand menu. In this window you can change the fill of the polygons and change their opacity (or level of transparency). You can also adjust the symbology of your dataset. Those options are available in a selection bar at the top of the window. For this dataset they are:
 
@@ -398,7 +393,7 @@ Using ```sum(states)``` in a new code cell, what are the largest and smallest nu
 
 ## Step Three: The Visualization
 
-_Insert Text Here_
+You will learn how to create a graphical display of your data that includes cartographic elements such as legend, scale bar, north arrow, etc.
 
 <details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
 
@@ -409,7 +404,7 @@ _Insert Text Here_
 
 <details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
 
-_Insert Text Here_
+Now it's time to turn your data into a map. From the menu bar in either macOS or PC click _Program > New Print Layout_. This will open a new window where you will add the data, title, legend, north arrow, scale bar, and your name and date.
 
 </details>
 <hr></hr>
@@ -528,7 +523,6 @@ How does the _dist = _ &nbsp;argument in the ```scalebar``` function relate spec
 </blockquote>
 
 </details>
-
 
 ## Step Four: Your Turn
 
