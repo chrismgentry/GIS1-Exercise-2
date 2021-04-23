@@ -36,6 +36,12 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
   color: DarkBlue;
   text-align: center;
 }
+
+span.tab2{padding: 0 20px;}
+span.tab4{padding: 0 40px;}
+span.tab6{padding: 0 60px;}
+span.tab8{padding: 0 80px;}
+
 </style>
 ```
 <hr></hr>
@@ -89,23 +95,23 @@ Each _colab_ notebook is separated into code cells and text cells. A code cell i
 
 Before beginning each exercise using **R**, you will need to open the [Exercise Colab Notebook](https://githubtocolab.com/chrismgentry/GIS-Exercise-2/blob/main/GIS1_EX2.ipynb) and alter the URL to view/edit the file in colab. To do this you will navigate to the exercise's GitHub page; in this case [https://github.com/chrismgentry/GIS1-Exercise-2](https://github.com/chrismgentry/GIS1-Exercise-2). In the list of folders and files you will find a file that will always be identified as _GIS1_EX_ followed by the exercise number and a _.ipynb_ file extension. So for this exercise it will be [GIS1_EX2.ipynb](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/GIS1_EX2.ipynb)
 
-<p align="center"><img src= "Images/r-github-ipy-location.png" alt="Finding the Google Colab file on GitHub" width="743" height="322"></p>
+<p align="center"><img src= "Images/r-github-ipy-location.png" alt="Finding the Google Colab file on GitHub" style="width:100%"></p>
 <br>
 When you locate the file, click on the name to open the _ipy_ notebook. In the resulting window, click on the URL and insert **tocolab** immediately after _github_ in the address. So the new URL for this exercise should now read:<br> ```https://githubtocolab.com/chrismgentry/GIS-Exercise-2/blob/main/GIS1_EX2.ipynb``` 
 
-<p align="center"><img src= "Images/r-github-tocolab.png" alt="Converting ipy file to colab" width="765" height="395"></p>
+<p align="center"><img src= "Images/r-github-tocolab.png" alt="Converting ipy file to colab" style="width:100%"></p>
 <br>
 Click enter/return and the file should now open inside of _Colab_. Your screen might have a slightly different appearance, but you should see the Exercise 2, GIS 1 header indicating you are in the correct notebook.
 
-<p align="center"><img src= "Images/r-colab.png" alt="Converting ipy file to colab" width="760" height="174"></p>
+<p align="center"><img src= "Images/r-colab.png" alt="Converting ipy file to colab" style="width:100%"></p>
 <br>
 Each time you open these colab notebooks, or if you have not interacted with the notebook for an extended period of time, you will need to make sure the environment is connected and all of the sample script has been run. To do this go to _Runtime > Run all_ (or click CRTL+F9) and run the notebook. This may take a moment to complete so be patient until the last code cell has been executed. You should see a green check mark with an allocation of RAM and Disk as shown by horizontal bars which will indicate you are connected. In each section of code there is a **Run cell** &nbsp;<img src= "Images/r-colab-run-code.png" alt="Run cell button" width="15" height="15"> button that will allow you to run the individual code cells. This button will have a rotating loading symbol <img src= "Images/r-colab-loading.png" alt="Run cell button" width="15" height="15"> while the code cell is being executed. Once it is complete the box will return to the run state and there may be an output visible depending on the script. You can add your own text or code cells to a notebook simply by moving your cursor slowly over the notebook to reveal the code/text option bar or by going to _Insert > Code cell/Text cell_.
 
-<p align="center"><img src= "Images/r-colab-code-text.png" alt="Adding Text or Code Blocks" width="764" height="18"></p>
+<p align="center"><img src= "Images/r-colab-code-text.png" alt="Adding Text or Code Blocks" style="width:100%"></p>
 <br>
 By clicking within each code or text cell you can edit the contains and adjust the properties using the various preset option controls.
 
-<p align="center"><img src= "Images/r-colab-block-settings.png" alt="Edit block properties" width="762" height="200"></p>
+<p align="center"><img src= "Images/r-colab-block-settings.png" alt="Edit block properties" style="width:100%"></p>
 <br>
 You should practice adding and removing cells, editing their content, and rearranging the order of the cells. This will help familiarize you with notebook tools and allow you to manipulate notebooks in these exercises and create your own notebooks in the future.
 
@@ -154,40 +160,55 @@ The purpose of this exercise is to help familiarize you with the [QGIS]{style="c
 
 When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _Control+click_ on macOS or _right-click > extract_ all on PC.
 
-<p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" width="510" height="200"></p><br>
+<p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" style="width:100%"></p><br>
 
 To start the QGIS program press the _Start Menu > QGIS_ or launch the application from the _Mac Launchpad_. It might be beneficial to create a shortcut on the desktop or add it to your dock for quicker access in the future. As the program loads, the opening screen will be extremely useful to you while working on future projects, however, for this exercise we will select **New Empty Project**.
 
-<p align="center"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
+<p align="center"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" style="width:100%"></p><br>
 
 The screen depicted below is separated into two sections. To the left there is the _Browser_ and _Layers_ sections, and on the right is the _Map Canvas_. Your version may vary slightly from the images. There are a number of ways to add data, but in this example we are going to use the browser window to connect to our ESRI Data folder.
 
-<p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
+<p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" style="width:100%"></p><br>
 
-In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. If there is a pop-up window that mentions transformations go ahead and click OK. This will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
+In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. If there is a pop-up window that mentions transformations go ahead and click OK. While the look of the US in this dataset is less than ideal, the purpose of this exercise is to ensure you know how to display data and basic tools for navigating the software. Transformations will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
 
-<p align="center"><img src= "Images/qgis-transformations.png" alt="QGIS Start Screen" width="800" height="400"></p><br>
+<p align="center"><img src= "Images/qgis-transformations.png" alt="QGIS Start Screen" style="width:100%"></p><br>
 
 Your screen should now look similar to the screens below (colors may vary). Notice that the longitude and latitude values at the bottom of the screen adjust as you move your cursor. 
 
-<p align="center"><img src= "Images/qgis-states.png" alt="QGIS Map Canvas" width="800" height="240"></p><br>
+<p align="center"><img src= "Images/qgis-states.png" alt="QGIS Map Canvas" style="width:100%"></p><br>
 
 You can now begin to explore some of the basic tools for navigating the _map canvas_ such as:
 
-- Zoom in and out with the _Fixed Zoom Tools_ <img src= "Images/qgis-fixed-zoom.png" alt="Fixed Zoom Tools" width="40" height="20">
-- _Pan tool_ to postion the map on the screen <img src= "Images/qgis-pan.png" alt="Pan Tool" width="20" height="20">
-- _Map scale_ where you can adjust the map scale (level of zoom) manually
-- _Zoom full_ button which will adjust the view to accommodate all datasets <img src= "Images/qgis-full-extent.png" alt="Zoom Full" width="20" height="20">
-
+<table style="width:100%;margin-left:auto;margin-right:auto;">
+  <tr>
+    <td><li>Zoom in and out with the <i>Fixed Zoom Tools</i></li></td>
+    <td><img src= "Images/qgis-fixed-zoom.png" alt="Fixed Zoom Tools" width="40" height="20"></td>
+  </tr>
+  <tr>
+    <td><li><i>Pan tool</i> to postion the map on the screen</li></td>
+    <td><img src= "Images/qgis-pan.png" alt="Pan Tool" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li><i>Map scale</i> where you can adjust the map scale (level of zoom) manually</li></td>
+    <td><img src= "Images/qgis-map-scale.png" alt="Map Scale" width="80" height="20"></td>
+  </tr>
+  <tr>
+    <td><li><i>Zoom full</i> button which will adjust the view to accommodate all datasets</li></td>
+    <td><img src= "Images/qgis-full-extent.png" alt="Zoom Full" width="20" height="20"></td>
+  </tr>
+</table>
+<br>
 Use these tools to zoom in and out, reposition the map on the screen, and return to the current view using the _zoom full_ button.
 
 Another useful tool is the **identify features** cursor which uses an icon with a lowercase _i_ in a [blue circle]{style="color:#6495ED"} <img src= "Images/qgis-identify.png" alt="Identify Features" width="20" height="20"> . This option extracts information for a selected feature from the attribute table of the selected layer.
 
-<p align="center"><img src= "Images/qgis-tennessee.png" alt="Identify Cursor" width="800" height="240"></p><br>
+<p align="center"><img src= "Images/qgis-tennessee.png" alt="Identify Cursor" style="width:100%"></p><br>
 
-If you wanted to view the entire underlying dataset you could control-click (macOS) or right-click (PC) on the active layer and select **Open attribute table**. In a future exercise you will learn how to sort, query, and edit information within the attribute table. For now, examine the numerous variables available for each state.
+If you wanted to view the entire underlying dataset you could control-click (macOS) or right-click (PC) on the active layer and select **Open attribute table**. In a future exercise you will learn how to sort, query, and edit information within the attribute table. For now, examine the numerous variables available for each state. What is the column name and range of values for the electric vehicle charging stations? <br>
+<small><i>Hint: This information will be needed in the next section.</i></small>
 
-<p align="center"><img src= "Images/qgis-attributes.png" alt="Attribute Table" width="800" height="240"></p><br>
+<p align="center"><img src= "Images/qgis-attributes.png" alt="Attribute Table" style="width:100%"></p><br>
 
 <b><big>Question No. 1</big></b>
 <blockquote>
@@ -260,8 +281,88 @@ _Insert Text Here_
 <details>
 <summary><big>View Directions in <b> [QGIS]{style="color:#006400"} </b></big></summary>
 
-_Insert Text Here_
+Now that you have the data displayed on the screen and understand how to access the underlying data, you need to customize the view so you can see the spatial distribution of electric vehicle charging stations in the US. To begin you will need to control-click (macOS) or right-click (PC) on the **ev_data** in your _layers_ and click on properties.
 
+<p align="center"><img src= "Images/qgis-rcproperties.png" alt="Right Click Properties" width="264" height="270"></p><br>
+
+In the resulting window you will need to go to the **Symbology** tab (<i>1.</i>) in the left-hand menu. In this window you can change the fill of the polygons and change their opacity (or level of transparency). You can also adjust the symbology of your dataset. Those options are available in a selection bar at the top of the window. For this dataset they are:
+
+<table style="width:50%;margin-left:auto;margin-right:auto;">
+  <tr>
+    <td><li>No Symbol</li></td>
+    <td><img src= "Images/qgis-no-symbols.png" alt="No Symbols" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Single Symbol</li></td>
+    <td><img src= "Images/qgis-single-symbol.png" alt="Single Symbol" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Categorized</li></td>
+    <td><img src= "Images/qgis-categorized-symbol.png" alt="Categorized Symbols" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Graduated</li></td>
+    <td><img src= "Images/qgis-graduated-symbol.png" alt="Graduated Symbols" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Rule-based</li></td>
+    <td><img src= "Images/qgis-rule-based-symbol.png" alt="Rule Based Symbols" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Inverted Polygons</li></td>
+    <td><img src= "Images/qgis-invpoly-symbol.png" alt="Inverted Polygon Symbols" width="20" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>2.5 D</li></td>
+    <td><img src= "Images/qgis-25D-symbol.png" alt="2.5 D Symbols" width="20" height="20"></td>
+  </tr>
+</table>
+<br>
+For this specific data you will choose _Graduated_ (<i>2.</i>) since the data needs to be displayed by a range of numeric values. Next you will select the **ev_station** variable (<i>3.</i>) in the dataset. In the drop-down for the _Color ramp_ option you have a number of color options to choose. For this example select **Viridis** (<i>4.</i>).  Do you recall what the range of values for the **ev_station** data? Because the largest value is greater than 30,000 and the smallest value is around 100, you will need to set the _Mode_ to a _logarithmic scale_ (<i>5.</i>) to properly display the data while avoiding a bias of the larger values. Change the _Classes_ to 6 (<i>6.</i>) and click **OK** (<i>7.</i>).
+
+<p align="center"><img src= "Images/qgis-symbology-options.png" alt="Symbology Properties" style="width:100%"></p>
+<p align="center"><small><b>Because the macOS and PC versions are identical only one image is shown.</b></small></p><br>
+
+Your screen should now look similar to this:
+
+<p align="center"><img src= "Images/qgis-viridis.png" alt="Graduated Data" style="width:100%"></p>
+
+At this point you should save your work. Whether using macOS or PC, on the menu bar go to _Project > Save As..._ and save your project in the folder you create for this exercise.
+
+<big><b>Question No. 2</b></big><br>
+In this step you used a _Graduated_ symbology to visualize the data and organized the values _logarithmically_. There were several other options within _mode_ menu. 
+
+<table style="width:75%;margin-left:auto;margin-right:auto;">
+  <tr>
+    <td><li>Equal Count (Quantile)</li></td>
+    <td><img src= "Images/qgis-equal-count.png" alt="Equal Count" width="140" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Equal Interval</li></td>
+    <td><img src= "Images/qgis-equal-interval.png" alt="Equal Interval" width="140" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Logarithmic Scale</li></td>
+    <td><img src= "Images/qgis-log-scale.png" alt="Logarithmic Scale" width="140" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Natural Breaks (Jenks)</li></td>
+    <td><img src= "Images/qgis-jenks.png" alt="Natural BReaks (Jenks)" width="140" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Pretty Breaks</li></td>
+    <td><img src= "Images/qgis-pretty-breaks.png" alt="Pretty Breaks" width="140" height="20"></td>
+  </tr>
+  <tr>
+    <td><li>Standard Deviation</li></td>
+    <td><img src= "Images/qgis-sd.png" alt="Standard Deviation" width="140" height="20"></td>
+  </tr>
+</table>
+
+<blockquote>
+Adjusting the _mode_ value, describe how the visualization changes with each of these different options.
+</blockquote>
+Record your answers and submit at the conclusion of the lab.
 </details>
 <hr></hr>
 
