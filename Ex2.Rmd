@@ -152,6 +152,10 @@ _Insert Text Here_
 
 The purpose of this exercise is to help familiarize you with the [QGIS]{style="color:#006400"} program. With this software, you will have the ability to view, create, and edit geographic data, query spatial data, examine spatial relationships, and create publishable maps. In these directions I will post images from both PC (on the left) and macOS (on the right) for each step. While your set-up may differ slightly, the configurations and layout of the tools should be similar.
 
+When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _Control+click_ on macOS or _right-click > extract_ all on PC.
+
+<p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" width="510" height="200"></p><br>
+
 To start the QGIS program press the _Start Menu > QGIS_ or launch the application from the _Mac Launchpad_. It might be beneficial to create a shortcut on the desktop or add it to your dock for quicker access in the future. As the program loads, the opening screen will be extremely useful to you while working on future projects, however, for this exercise we will select **New Empty Project**.
 
 <p align="center"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
@@ -160,11 +164,38 @@ The screen depicted below is separated into two sections. To the left there is t
 
 <p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" width="800" height="240"></p><br>
 
-Question No. 1
+In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. If there is a pop-up window that mentions transformations go ahead and click OK. This will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
+
+<p align="center"><img src= "Images/qgis-transformations.png" alt="QGIS Start Screen" width="800" height="400"></p><br>
+
+Your screen should now look similar to the screens below (colors may vary). Notice that the longitude and latitude values at the bottom of the screen adjust as you move your cursor. 
+
+<p align="center"><img src= "Images/qgis-states.png" alt="QGIS Map Canvas" width="800" height="240"></p><br>
+
+You can now begin to explore some of the basic tools for navigating the _map canvas_ such as:
+
+- Zoom in and out with the _Fixed Zoom Tools_ <img src= "Images/qgis-fixed-zoom.png" alt="Fixed Zoom Tools" width="40" height="20">
+- _Pan tool_ to postion the map on the screen <img src= "Images/qgis-pan.png" alt="Pan Tool" width="20" height="20">
+- _Map scale_ where you can adjust the map scale (level of zoom) manually
+- _Zoom full_ button which will adjust the view to accommodate all datasets <img src= "Images/qgis-full-extent.png" alt="Zoom Full" width="20" height="20">
+
+Use these tools to zoom in and out, reposition the map on the screen, and return to the current view using the _zoom full_ button.
+
+Another useful tool is the **identify features** cursor which uses an icon with a lowercase _i_ in a [blue circle]{style="color:#6495ED"} <img src= "Images/qgis-identify.png" alt="Identify Features" width="20" height="20"> . This option extracts information for a selected feature from the attribute table of the selected layer.
+
+<p align="center"><img src= "Images/qgis-tennessee.png" alt="Identify Cursor" width="800" height="240"></p><br>
+
+If you wanted to view the entire underlying dataset you could control-click (macOS) or right-click (PC) on the active layer and select **Open attribute table**. In a future exercise you will learn how to sort, query, and edit information within the attribute table. For now, examine the numerous variables available for each state.
+
+<p align="center"><img src= "Images/qgis-attributes.png" alt="Attribute Table" width="800" height="240"></p><br>
+
+<b><big>Question No. 1</big></b>
 <blockquote>
-_Insert Text Here_
+Using the identify tool, what is the population of Tennessee in 2010? What percentage of the population is female?<br><br>
+Using the attribute table, find the area (_SQMI_&nbsp;) of Colorado. How much larger is it than Wyoming?
 </blockquote>
 
+Type your answers in a word document or record the answers on a sheet of paper. They will need to be submitted at the conclusion of this lab.
 </details>
 <hr></hr>
 
