@@ -37,8 +37,21 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
   text-align: center;
 }
 
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom img{
+	width:100%;
+	height:auto;	
+}
+.zoom:hover {
+  transform: scale(2);
+}
+
 </style>
 ```
+
 <hr></hr>
 
 For this first exercise you will be examining how you can use various software for geospatial analysis and graphical display of spatial data. Because of the variety and availability of operating systems in use today, each of the exercises in this course can be completed in either **[ArcGIS Pro]{style="color:#ff4500"}**, **[QGIS]{style="color: #006400"}**, or **[R]{style="color: #6495ED"}**. Each of these software have their pro's and con's but for simplicity purposes here is a table that might suggest which software would be best for you:
@@ -405,6 +418,8 @@ _Insert Text Here_
 <details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
 
 Now it's time to turn your data into a map. From the menu bar in either macOS or PC click _Program > New Print Layout_. This will open a new window where you will add the data, title, legend, north arrow, scale bar, and your name and date.
+
+<p align="center"><div class="zoom"> <img src= "Images/qgis-new-print-layer.png" alt="New Print Layout" style="width:100%"></div></p>
 
 </details>
 <hr></hr>
