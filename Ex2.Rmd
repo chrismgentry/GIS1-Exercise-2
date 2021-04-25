@@ -172,11 +172,11 @@ When you begin a new exercise it would be beneficial to create a new folder spec
 
 To start the QGIS program press the _Start Menu > QGIS_ or launch the application from the _Mac Launchpad_. It might be beneficial to create a shortcut on the desktop or add it to your dock for quicker access in the future. As the program loads, the opening screen will be extremely useful to you while working on future projects, however, for this exercise we will select **New Empty Project**.
 
-<p align="center"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" style="width:100%"></p><br>
+<p align="center"><div class="zoom"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" style="width:100%"></div></p><br>
 
 The screen depicted below is separated into two sections. To the left there is the _Browser_ and _Layers_ sections, and on the right is the _Map Canvas_. Your version may vary slightly from the images. There are a number of ways to add data, but in this example we are going to use the browser window to connect to our ESRI Data folder.
 
-<p align="center"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" style="width:100%"></p><br>
+<p align="center"><div class="zoom"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" style="width:100%"></div></p><br>
 
 In the _Browser_ window on the left, navigate to the folder where you saved and unzipped the exercise data folder. Once you locate a folder in folder in the browser, you can use control+click (macOS) or right-click (PC) to **Add as a favorite**. This will link it to the favorites drop-down in the browser window giving you quicker future access. To add the data, you will navigate to the **ev_data.shp** file and then click-and-drag it to the map canvas. You will be able to add all types of data in this same way. If there is a pop-up window that mentions transformations go ahead and click OK. While the look of the US in this dataset is less than ideal, the purpose of this exercise is to ensure you know how to display data and basic tools for navigating the software. Transformations will be discussed further in a couple weeks after a lecture on projections and coordinate systems. For now, leave it with option 1 and click OK.
 
@@ -184,7 +184,7 @@ In the _Browser_ window on the left, navigate to the folder where you saved and 
 
 Your screen should now look similar to the screens below (colors may vary). Notice that the longitude and latitude values at the bottom of the screen adjust as you move your cursor. 
 
-<p align="center"><img src= "Images/qgis-states.png" alt="QGIS Map Canvas" style="width:100%"></p><br>
+<p align="center"><div class="zoom"><img src= "Images/qgis-states.png" alt="QGIS Map Canvas" style="width:100%"></div></p><br>
 
 You can now begin to explore some of the basic tools for navigating the _map canvas_ such as:
 
@@ -211,12 +211,12 @@ Use these tools to zoom in and out, reposition the map on the screen, and return
 
 Another useful tool is the **identify features** cursor which uses an icon with a lowercase _i_ in a [blue circle]{style="color:#6495ED"} <img src= "Images/qgis-identify.png" alt="Identify Features" width="20" height="20"> . This option extracts information for a selected feature from the attribute table of the selected layer.
 
-<p align="center"><img src= "Images/qgis-tennessee.png" alt="Identify Cursor" style="width:100%"></p><br>
+<p align="center"><div class="zoom"><img src= "Images/qgis-tennessee.png" alt="Identify Cursor" style="width:100%"></div></p><br>
 
 If you wanted to view the entire underlying dataset you could control-click (macOS) or right-click (PC) on the active layer and select **Open attribute table**. In a future exercise you will learn how to sort, query, and edit information within the attribute table. For now, examine the numerous variables available for each state. What is the column name and range of values for the electric vehicle charging stations? <br>
 <small><i>Hint: This information will be needed in the next section.</i></small>
 
-<p align="center"><img src= "Images/qgis-attributes.png" alt="Attribute Table" style="width:100%"></p><br>
+<p align="center"><div class="zoom"><img src= "Images/qgis-attributes.png" alt="Attribute Table" style="width:100%"></div></p><br>
 
 <b><big>Question No. 1</big></b>
 <blockquote>
@@ -328,12 +328,12 @@ In the resulting window you will need to go to the **Symbology** tab (<i>1.</i>)
 <br>
 For this specific data you will choose _Graduated_ (<i>2.</i>) since the data needs to be displayed by a range of numeric values. Next you will select the **ev_station** variable (<i>3.</i>) in the dataset. In the drop-down for the _Color ramp_ option you have a number of color options to choose. For this example select **Viridis** (<i>4.</i>).  Do you recall what the range of values for the **ev_station** data? Because the largest value is greater than 30,000 and the smallest value is around 100, you will need to set the _Mode_ to a _logarithmic scale_ (<i>5.</i>) to properly display the data while avoiding a bias of the larger values. Change the _Classes_ to 6 (<i>6.</i>) and click **OK** (<i>7.</i>).
 
-<p align="center"><img src= "Images/qgis-symbology-options.png" alt="Symbology Properties" style="width:100%"></p>
+<p align="center"><div class="zoom"><img src= "Images/qgis-symbology-options.png" alt="Symbology Properties" style="width:100%"></div></p>
 <p align="center"><small><b>Because the macOS and PC versions are identical only one image is shown.</b></small></p><br>
 
 Your screen should now look similar to this:
 
-<p align="center"><img src= "Images/qgis-viridis.png" alt="Graduated Data" style="width:100%"></p>
+<p align="center"><div class="zoom"><img src= "Images/qgis-viridis.png" alt="Graduated Data" style="width:100%"></div></p>
 
 At this point you should save your work. Whether using macOS or PC, on the menu bar go to _Project > Save As..._ and save your project in the folder you create for this exercise.
 
@@ -419,7 +419,7 @@ _Insert Text Here_
 
 Now it's time to turn your data into a map. From the menu bar in either macOS or PC click _Program > New Print Layout_. This will open a new window where you will add the data, title, legend, north arrow, scale bar, and your name and date.
 
-<p align="center"><div class="zoom"> <img src= "Images/qgis-new-print-layer.png" alt="New Print Layout" style="width:100%"></div></p>
+<p align="center"><div class="zoom"><img src= "Images/qgis-new-print-layer.png" alt="New Print Layout" style="width:100%"></div></p>
 
 </details>
 <hr></hr>
