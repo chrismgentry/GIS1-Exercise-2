@@ -38,11 +38,12 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
 }
 
 .zoom {
-  transition: transform .2s; /* Animation */
+  transform-origin: 40% 50% 0;
+  transition: transform .2s;
   margin: 0 auto;
 }
 .zoom img{
-	width:100%;
+	width:auto;
 	height:auto;	
 }
 .zoom:hover {
@@ -417,16 +418,32 @@ _Insert Text Here_
 
 <details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
 
-Now it's time to turn your data into a map. From the menu bar in either macOS or PC click _Program > New Print Layout_. This will open a new window where you will add the data, title, legend, north arrow, scale bar, and your name and date.
+Now it's time to turn your data into a map. From the menu bar in either macOS or PC click _Program > New Print Layout_. This will open a new window where you will add the data, title, legend, north arrow, scale bar, and your name and date. 
 
 <p align="center"><div class="zoom"><img src= "Images/qgis-new-print-layer.png" alt="New Print Layout" style="width:100%"></div></p>
+
+It will first ask you to create a print layout title. After you input a title clock OK.
+
+<p align="center"><img src= "Images/qgis-name-print-layout.png" alt="Name Print Layout" style="width:80%"></p>
+
+In the new window you will see a blank layout page. If you control-click (macOS) or right-click (PC) on the page you will see options for **Page Properties...** that allows you to adjust the page size, orientation (landscape or portrait), or customize the width and height and provide a background color to the layout.There will also be an option to **Manage Guides for Page...** which will allow you to add or remove _Horizontal_ or _Vertical Guides_ that will help align items on the layout.
+
+To add your data to the layout you will use the **Add map** tool <img src= "Images/qgis-add-map.png" alt="Add Map Button" width="20" height="20"> that is located in the column of tools on the left side of the screen. When you select this tool and hover over the page layout your cursor will become a plus symbol. You will use this to draw a bounding box on the page layout that will serve as the location for the map data. 
+
+<p align="center"><div class="zoom"><img src="Images/qgis-add-map-box.png" alt="Add Map Box" style="width:100%"></div></p>
+
+Once you have drawn the map box, the information displayed on the map canvas will be added to the print layout. Your screen should now look similar to this:
+
+<p align="center"><div class="zoom"><img src="Images/qgis-map-added.png" alt="Map canvas displayed on print layout" style="width:100%"></div></p>
+
+In order to complete a basic map you will now need to add a north arrow <img src= "Images/qgis-add-north-arrow.png" alt="Add North Arrow" width="20" height="20">&nbsp;, scale bar <img src= "Images/qgis-add-scale-bar.png" alt="Add Scale Bar" width="20" height="20">&nbsp;, legend <img src= "Images/qgis-add-legend.png" alt="Add Legend" width="20" height="20">&nbsp;, and text <img src= "Images/qgis-add-text.png" alt="Add Text" width="20" height="20">&nbsp; to include a title and the name and date of the map creator.
 
 </details>
 <hr></hr>
 
 <details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
 
-With this new dataset you are now ready to create a map to examine the distribution of electric vehicle charging stations across the country. In the step one you used a very simple script to display the **us** data.
+With this new dataset you are now ready to create a map to examine the distribution of electric vehicle charging stations across the country. In the step one you used a very simple script to display the **us** data.  
 
 ```
 ggplot(us) + 
