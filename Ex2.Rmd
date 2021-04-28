@@ -436,7 +436,9 @@ Once you have drawn the map box, the information displayed on the map canvas wil
 
 <p align="center"><div class="zoom"><img src="Images/qgis-map-added.png" alt="Map canvas displayed on print layout" style="width:100%"></div></p>
 
-In order to complete a basic map you will now need to add a north arrow <img src= "Images/qgis-add-north-arrow.png" alt="Add North Arrow" width="20" height="20">&nbsp;, scale bar <img src= "Images/qgis-add-scale-bar.png" alt="Add Scale Bar" width="20" height="20">&nbsp;, legend <img src= "Images/qgis-add-legend.png" alt="Add Legend" width="20" height="20">&nbsp;, and text <img src= "Images/qgis-add-text.png" alt="Add Text" width="20" height="20">&nbsp; to include a title and the name and date of the map creator.
+In order to complete a basic map you will now need to add a north arrow <img src= "Images/qgis-add-north-arrow.png" alt="Add North Arrow" width="20" height="20">&nbsp;, scale bar <img src= "Images/qgis-add-scale-bar.png" alt="Add Scale Bar" width="20" height="20">&nbsp;, legend <img src= "Images/qgis-add-legend.png" alt="Add Legend" width="20" height="20">&nbsp;, and text <img src= "Images/qgis-add-text.png" alt="Add Text" width="20" height="20">&nbsp; to include a title and the name and date of the map creator. Each of these items works essentially the same as adding the map data. They can also be added through _Add Item_ in the menu bar. Once you choose the object you want to add, your cursor becomes a plus symbol and you are then able to draw the object in the desired location. Once you have placed each of the items, select any one, and in the control-click (macOS) or right-click (PC) menu choose **Item Properties**. This will open a new menu to the right of the screen that allows you to edit various properties like the symbol for the north arrow, scale bar units, legend item arrangement, and the text variables for the title, name and date.
+
+<p align="center"><div class="zoom"><img src="Images/qgis-item-properties.png" alt="Item Properties Menu" style="width:100%"></div></p>
 
 </details>
 <hr></hr>
