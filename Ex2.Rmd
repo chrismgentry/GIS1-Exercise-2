@@ -50,6 +50,8 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
   transform: scale(2);
 }
 
+th, td {padding: 5px;}
+
 </style>
 ```
 
@@ -225,7 +227,7 @@ Using the identify tool, what is the population of Tennessee in 2010? What perce
 Using the attribute table, find the area (_SQMI_&nbsp;) of Colorado. How much larger is it than Wyoming?
 </blockquote>
 
-Type your answers in a word document or record the answers on a sheet of paper. They will need to be submitted at the conclusion of this lab.
+Type your answers in a word document. The answers will need to be submitted at the conclusion of this lab.
 </details>
 <hr></hr>
 
@@ -436,9 +438,71 @@ Once you have drawn the map box, the information displayed on the map canvas wil
 
 <p align="center"><div class="zoom"><img src="Images/qgis-map-added.png" alt="Map canvas displayed on print layout" style="width:100%"></div></p>
 
-In order to complete a basic map you will now need to add a north arrow <img src= "Images/qgis-add-north-arrow.png" alt="Add North Arrow" width="20" height="20">&nbsp;, scale bar <img src= "Images/qgis-add-scale-bar.png" alt="Add Scale Bar" width="20" height="20">&nbsp;, legend <img src= "Images/qgis-add-legend.png" alt="Add Legend" width="20" height="20">&nbsp;, and text <img src= "Images/qgis-add-text.png" alt="Add Text" width="20" height="20">&nbsp; to include a title and the name and date of the map creator. Each of these items works essentially the same as adding the map data. They can also be added through _Add Item_ in the menu bar. Once you choose the object you want to add, your cursor becomes a plus symbol and you are then able to draw the object in the desired location. Once you have placed each of the items, select any one, and in the control-click (macOS) or right-click (PC) menu choose **Item Properties**. This will open a new menu to the right of the screen that allows you to edit various properties like the symbol for the north arrow, scale bar units, legend item arrangement, and the text variables for the title, name and date.
+In order to complete a basic map you will now need to add a north arrow <img src= "Images/qgis-add-north-arrow.png" alt="Add North Arrow" width="20" height="20">&nbsp;, scale bar <img src= "Images/qgis-add-scale-bar.png" alt="Add Scale Bar" width="20" height="20">&nbsp;, legend <img src= "Images/qgis-add-legend.png" alt="Add Legend" width="20" height="20">&nbsp;, and text <img src= "Images/qgis-add-text.png" alt="Add Text" width="20" height="20">&nbsp; to include a title and the name and date of the map creator. Each of these items works essentially the same as adding the map data. They can also be added through _Add Item_ in the menu bar. There are several other buttons you should familiarize yourself with on the layout page such as: 
+
+<table style="width:100%">
+  <colgroup>
+       <col style="width: 20%;">
+       <col style="width: 10%;">
+       <col style="width: 70%;">
+  </colgroup>
+  <tr>
+    <td>Pan</td>
+    <td><img src= "Images/qgis-pan-layout.png" alt="Pan Layout" width="20" height="20"></td>
+    <td>The <i>Pan Tool</i> is used to shift the map canvas. This is useful when the canvas is larger than your display due to the level of zoom</td>
+  </tr>
+  <tr>
+    <td>Zoom</td>
+    <td><img src= "Images/qgis-layout-zoom.png" alt="Layout Zoom" width="20" height="20"></td>
+    <td>The <i>Zoom Tool</i> is used to increase the magnification of the map canvas, but is not used to zoom in on the data</td>
+  </tr>
+  <tr>
+    <td>Move Item Content</td>
+    <td><img src= "Images/qgis-move-item-content.png" alt="Move Item Content" width="20" height="20"></td>
+    <td>The <i>Move Item Content Tool</i> is used to move the map information within the bounding box and allows you zoom in and out on the map data</td>
+  </tr>
+  <tr>
+    <td>Select/Move Item</td>
+    <td><img src= "Images/qgis-select-move.png" alt="Select and Move Item" width="20" height="20"></td>
+    <td>The <i>Select/Move Item Tool</i> is used to move items such as the north arrow on the map canvas</td>
+  </tr>
+  <tr>
+    <td>Lock/Unlock Items</td>
+    <td><img src= "Images/qgis-lock-buttons.png" alt="Lock and Unlock All Items" width="44" height="20"></td>
+    <td>Locking items keeps any changes from being made to the items on the layout</td>
+  </tr>
+  <tr>
+    <td>Group/Ungroup Items</td>
+    <td><img src= "Images/qgis-group-buttons.png" alt="Group and Ungroup Items" width="44" height="20"></td>
+    <td>These <i>tools</i> allow selected items to be grouped in order to remain together when moved</td>
+  </tr>
+  <tr>
+    <td>Raise/Align Items</td>
+    <td><img src= "Images/qgis-arrange-buttons.png" alt="Rearrange and Align Items" width="44" height="20"></td>
+    <td>These <i>tools</i> allow for items to be placed above or below another in their hierarchy or allows selected items to be aligned</td>
+  </tr>
+</table><br>
+
+Once you choose the object you want to add, your cursor becomes a plus symbol and you are then able to draw the object in the desired location. Once you have placed each of the items, select any one, and in the control-click (macOS) or right-click (PC) menu choose **Item Properties**. This will open a new menu to the right of the screen that allows you to edit various properties like the symbol for the north arrow, scale bar units, legend item arrangement, and the text variables for the title, name and date.
 
 <p align="center"><div class="zoom"><img src="Images/qgis-item-properties.png" alt="Item Properties Menu" style="width:100%"></div></p>
+
+Take your time to examine the various options within each of the properties menus. As you continue to make maps you will become more familiar with these menus and begin to develop your own style for each item. <small><i>Hint: do not make the north arrow too large.</i></small> At this point you should save the project. 
+
+Because the electric vehicle charging station data was organized logarithmically you can see that the values are displayed in scientific notation. Additionally, the display heading is the same as the name of the dataset. So to correct that you will return to the map canvas. If at any point you accidentally close the _Print layout_ you can always open it again by clicking **Show Layout Manager** <img src= "Images/qgis-layout-manager.png" alt="Add Scale Bar" width="20" height="20">&nbsp; on the main toolbar. In the window select the layout you created and click _Show_. 
+
+Back in the layers area, control-click (macOS) or right-click (PC) on the **ev_data** layer and go to _Properties_ and the _Symbology_ tab on the left. from there you will see the options you selected earlier in the exercise. In the classes section, you will see three (3) columns of information: Symbol, Values, and Legend. The information in _Legend_ can be edited by simply double-clicking on the text. Edit each legend entry to match the information in the values column. When you have completed click OK.
+
+<p align="center"><div class="zoom"><img src="Images/qgis-symbology.png" alt="Altering legend information in symbology window" style="width:100%"></div></p>
+
+Finally, control-click or right-click on the dataset in layers and click _Rename Layer_. Give it a name that is representative of the dataset such as "Electric Vehicle Charging Stations". Now return to your layout. If the information has not been updated, click the _Refresh View_ button <img src= "Images/qgis-refresh-view.png" alt="Refresh View" width="20" height="20">&nbsp; on the toolbar. Your layout should update with all of the changes you made in the _Symbology Tab_. You may also need to adjust the size of the legend now that you have edited the data. This is just one of a number of different ways to edit information for datasets. In future exercises you will examine other editing methods. You should now have a completed map that includes all of the necessary elements discussed above.
+
+<p align="center"><img src="Images/qgis-ex1-final-map.png" alt="Exercise 1 Final Map" style="width:100%"></p>
+
+<big><b>Question No. 3</b></big>
+<blockquote>
+What is the largest and smallest number of electric vehicle charging stations?
+</blockquote>
 
 </details>
 <hr></hr>
@@ -579,14 +643,29 @@ _Insert Text Here_
 
 <details><summary><big>View directions in <b> [QGIS]{style="color:#006400"} </b></span></big></summary>
 
-_Insert Text Here_
+This portion of the exercise is meant to reinforce the skills you learned in the first part of the lab. The steps to complete your final map will be to:
+
+1. Download and unzip the tornadoes dataset
+2. Add the data to your layers
+3. Use the symbology tab to color the counties by number of tornadoes (**tornado_co**)
+4. Map out the data including all the necessary elements added above
+
+To begin this portion of the exercise you will need to download the [tornado dataset](https://github.com/chrismgentry/GIS1-Exercise-2/raw/main/Data/Shapefiles/tornado_data.zip). Remember you can use the identity tool or the attribute table to examine the information. When you have completed your map, click _Project > Export as Image..._ on PC or _Project > Import/Export > Export Map to Image..._ on macOS to save your map as a _\*.jpg_. This will allow you to add it to your word document and be submitted at the end of this exercise.
+
+<p align="center"><img src="Images/qgis-image-save.png" alt="Export map as image" style="width:100%"></p>
+
+<big><b>Question No. 4</b></big>
+<blockquote>
+Which county had the highest number of reported tornadoes?<br>
+<small>Hint: Remember you can sort the data in any column by clicking on the column header.</small>
+</blockquote>
 
 </details>
 <hr></hr>
 
 <details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
 
-This portion of the exercise is meant to reinforce the skills you learned in the part of the lab. The steps you will take to complete your final map will be to:
+This portion of the exercise is meant to reinforce the skills you learned in the first part of the lab. The steps to complete your final map will be to:
 
 1. Create an object from the tornadoes dataset
 2. Obtain a dataset of Tennessee counties
@@ -594,7 +673,7 @@ This portion of the exercise is meant to reinforce the skills you learned in the
 4. Map out the data using ```ggplot```
 
 
-To begin the exercise you will need this URL to the comma delimited dataset:
+To begin this portion of the exercise you will need this URL to the comma delimited dataset:
 
 https://raw.githubusercontent.com/chrismgentry/GIS1-Exercise-2/main/Data/tn_tornadoes.csv
 
@@ -634,4 +713,4 @@ The Montgomery County Emergency Management Agency has asked you to provide a map
 - Describe which regions of Tennessee had the fewest reported tornadoes 
 - Inform MCEMA which metropolitan regions could be most impacted by future severe weather events
 
-When complete, send link to your _Colab Notebook_ via email.
+When complete, send a link to your _Colab Notebook_ or word document with answers to Questions 1-4 and your completed map via email.
