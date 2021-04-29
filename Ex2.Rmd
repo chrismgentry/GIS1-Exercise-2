@@ -149,7 +149,7 @@ Software specific directions can be found for each step below. Please submit the
 
 ## Step One: The Data
 
-_Insert Text Here_
+In this step you will learn how to obtain data, load it into the software, examine the attributes, and make a simple display.
 
 <details>
 <summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
