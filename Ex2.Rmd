@@ -169,7 +169,7 @@ _Insert Text Here_
 
 The purpose of this exercise is to help familiarize you with the [QGIS]{style="color:#006400"} program. With this software, you will have the ability to view, create, and edit geographic data, query spatial data, examine spatial relationships, and create publishable maps. In these directions I will post images from both PC (on the left) and macOS (on the right) for each step. While your set-up may differ slightly, the configurations and layout of the tools should be similar.
 
-When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _Control+click_ on macOS or _right-click > extract_ all on PC.
+When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _double-click_ on macOS or _right-click > extract_ all on PC.
 
 <p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" style="width:100%"></p><br>
 
@@ -509,7 +509,7 @@ What is the largest and smallest number of electric vehicle charging stations?
 
 <details><summary><big>View directions in <b> [R]{style="color:#6495ED"} </b></span></big></summary>
 
-With this new dataset you are now ready to create a map to examine the distribution of electric vehicle charging stations across the country. In the step one you used a very simple script to display the **us** data.  
+With this new dataset you are now ready to create a map to examine the distribution of electric vehicle charging stations across the country. In step one you used a very simple script to display the **us** data.  
 
 ```
 ggplot(us) + 
@@ -524,7 +524,7 @@ Earlier in the notebook we installed the ```ggsn``` package. This package allows
 ggplot(states) + geom_polygon(aes(x=long, y=lat, group=group, fill = evs_count), color = "white")
 ```
 
-One thing you will notice is that the categories are very difficult to distinguish. Because you have wide ranging data in the _evs_count_ column only the largest value is showing. A simple fix to this would be to take the common logarithm of the data to standardize the data by removing the skewness towards large values. The function ```scale-viridis``` scales the data and provides a color map designed to be perceived by viewers with common forms of color blindness. So you can add ```scale_fill_viridis_c(option = "D", trans = "log10")``` to the script above where:
+One thing you will notice is that the categories are very difficult to distinguish. Because you have wide ranging data in the _evs_count_ column only the largest value is showing. A simple fix to this would be to take the common logarithm of the data to standardize the values by removing the skewness towards larger numbers. The function ```scale-viridis``` scales the data and provides a color map designed to be perceived by viewers with common forms of color blindness. So you can add ```scale_fill_viridis_c(option = "D", trans = "log10")``` to the script above where:
 
 - scale_fill_viridis_c is a fill pattern for continuous data
 - option = "D" is the default color option
@@ -610,7 +610,7 @@ ggplot(states) +
   labs(x="Longitude",y="Latitude", title="Number of Electric Vehicle Charging Stations Per State", fill = "No. of Stations") +
   north(states, location = "bottomleft", scale = 0.05, symbol = 12, anchor = c(x= -70, y= 25)) + 
   scalebar(states, dist = 250, dist_unit = "mi", transform = TRUE, model = "WGS84", location = "bottomleft", st.dist = 0.05, st.size = 2, anchor = c(x=-125,y=27)) +
-  annotate("text", x = -90, y = 25, label = "Your Name \n The Date", size = 2)
+  annotate("text", x = -90, y = 25, label = "Chris Gentry\n August 2021", size = 2)
 ```
 
 There is an exhaustive amount of modifications that can be applied to the map above, but for now you have the minimum information required to create a map of similar kinds of data. In future exercises you will use various function to customize the look of your maps. 
@@ -683,6 +683,7 @@ To obtain county information for the State of Tennessee you should use the follo
 
 ```{r tennessee, echo = TRUE, message=FALSE, warning=FALSE}
 tn <- map_data('county', region = "tennessee")
+head(tn)
 ```
 
 If you search for _map_data_ in the **ggplot2** [documentation](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf) you will find an example of a script used to isolate information for the State of Iowa that can be adapted for any state in the dataset. Remember when working with scripts, Google is your friend! All it requires is asking the correct question to find some example code online that can help guide you. There are numerous possible answers to the same problem so don't hesitate to try other methods.
