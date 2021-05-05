@@ -154,7 +154,90 @@ In this step you will learn how to obtain data, load it into the software, exami
 <details>
 <summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
 
-_Insert Text Here_
+The purpose of this exercise is to help familiarize you with the [ArcGIS Pro]{style="color:#ff4500"} program. With this software, you will have the ability to view, create, and edit geographic data, query spatial data, examine spatial relationships, and create publishable maps. To launch ArcGIS Pro, click on the start menu and search for the ArcGIS Folder. Within the folder click on the **ArcGIS Pro** icon to open.
+
+<p align="center"><img src= "Images/arcgis-pro.png" alt="Data Download from GitHub" width="260" height="320"></p><br>
+
+After the initial splash screen, you'll be greeted with a screen that allows you to open previous recently saved projects, new map templates, and view various resources from ESRI. For this exercise you will begin by clicking **Map** under the _New > Blank Templates_ section in the middle of the screen.
+
+<p align="center"><img src= "Images/arcgis-splash-screen.png" alt="ArcGIS Pro Open Screen" style="width:100%"></p><br>
+
+This will open a new _Create a New Project_&nbsp; screen that will ask you to give your new project a name and a location on your computer to save the project. At this point I would recommend creating a new folder somewhere on your PC to store all of your _GIS1_ exercises for the semester. This will make them easier to locate later on.
+
+<p align="center"><img src= "Images/arcgis-new-project.png" alt="Project name and location" style="width:100%"></p><br>
+
+After establishing the project, a project file and several folders will be created in your folder, and your screen should appear similar to this:
+
+<p align="center"><img src= "Images/arcgis-open-project.png" alt="New project" style="width:100%"></p><br>
+
+While your screen might appear slightly different, you should have a basemap in the center section, a list of objects under _Map_ in the _Contents_ section on the left (frequently called a table of contents), and possibly a blank section on the right. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#ff4500"}</b> and saving it in your exercise folder created above. Once the download is complete you will need to unzip the file by using _right-click > extract all_ on the zipped folder.
+
+<p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" style="width:100%"></p><br>
+
+This data should now be available for use in your project. To add the information to your map project, navigate to the **Map** tab on the menu bar and find the _Add Data_ button. From here you can click the drop-down menu and see all of the options. For this example you will click _Data, Add data to the map._
+
+<p align="center"><img src= "Images/arcgis-add-data-button.png" alt="Add data button" width="240" height="625"></p><br>
+
+Similar to other PC-based GUI interfaces, a new window will open where you will navigate to your data folder and double-click or single-click and click OK to add the data.
+
+<p align="center"><img src= "Images/arcgis-add-data.png" alt="Add data" style="width:100%"></p><br>
+
+This will add the data to your map and it will appear in the table of contents. Your screen should now look similar to the one below (colors may vary):
+
+<p align="center"><img src= "Images/arcgis-data-view.png" alt="EV Dataset View" style="width:100%"></p><br>
+
+With this dataset added, you can now begin to explore some of the basic tools for navigating and analyzing the map data. Some information or tools are available in the map view while some are located in each of the various tabs (Map, Insert, Analysis, View, Edit, Imagery, and Share). Additionally, some tabs or information will only become available when data is selected. For example, while on the **Map** tab, if you select the _ev_data_ in the table of contents you will see that **Appearance, Labeling, and Data** tabs all appear. If you select either the _World Topographic Map_ or _World Hillshade_ only **Appearance** is added. If you select _Map_ in the table of contents then all additional options are removed. 
+
+Along the bottom of the map view there are several tools available including: 
+
+<table style="width:100%;margin-left:auto;margin-right:auto;">
+  <tr>
+    <td><li>Representative Fraction</li></td>
+    <td>Unit-less relation between map units and real-world units (e.g. 1 unit equals 30,000 units)</td>
+  </tr>
+  <tr>
+    <td><li>Snapping</li></td>
+    <td>Moving a feature to match or coincide exactly with another point or feature's coordinates when your pointer is within a specified distance or tolerance</td>
+  </tr>
+  <tr>
+    <td><li>Constraints</li></td>
+    <td>Limits imposed on a model to maintain data integrity</td>
+  </tr>
+  <tr>
+    <td><li>Grid</li></td>
+    <td>A network of parallel and perpendicular lines superimposed on a map and used for reference</td>
+  </tr>
+  <tr>
+    <td><li>Inference</li></td>
+    <td>Analyzes the segment of the active sketch over which the pointer is hovering and displays inferred geometric constraints</td>
+  </tr>
+  <tr>
+    <td><li>Corrections</li></td>
+    <td>Set grid corrections and offset</td>
+  </tr>
+  <tr>
+    <td><li>X,Y Coordinates</li></td>
+    <td>X,Y location of the cursor; can be set to decimal degrees, degrees minutes seconds, degree decimal minutes, military grid reference system, national grid, or universal transverse mercator</td>
+  </tr>
+  <tr>
+    <td><li>Selected Features</li></td>
+    <td>Depicts the number of items selected from a feature set</td>
+  </tr>
+  <tr>
+    <td><li>Pausing Drawing</li></td>
+    <td>Stops the drawing of layers on the map view</td>
+  </tr>
+  <tr>
+    <td><li>Refresh</li></td>
+    <td>Reloads the map view</td>
+  </tr>
+</table>
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-data-view-toolbar-markup.png" alt="Map View Toolbar" style="width:100%"></div></p><br>
+
+The mouse can be used to navigate around the map view. The left-click button is used to pan or move the map around the screen and view pop-ups, the scroll wheel is used to zoom or rotate/tilt (3D), and righ-click is used for continuous zoom by clicking and moving the cursor up to zoom out and down to zoom in.
+
+<p align="center"><img src= "Images/arcgis-explore-tool.png" alt="Explore" width="320" height="270"></p><br>
 
 Question No. 1
 <blockquote>
@@ -169,7 +252,7 @@ _Insert Text Here_
 
 The purpose of this exercise is to help familiarize you with the [QGIS]{style="color:#006400"} program. With this software, you will have the ability to view, create, and edit geographic data, query spatial data, examine spatial relationships, and create publishable maps. In these directions I will post images from both PC (on the left) and macOS (on the right) for each step. While your set-up may differ slightly, the configurations and layout of the tools should be similar.
 
-When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _double-click_ on macOS or _right-click > extract_ all on PC.
+When you begin a new exercise it would be beneficial to create a new folder specifically for the data and project files associated with the lab. This will help you to organize your data and be able to quickly refer back to it in later exercises. For this exercise you will need to download the _Electric Vehicle Charging Station_ data from the [GitHub Repository](https://github.com/chrismgentry/GIS1-Exercise-2){style="color:#000000"} by clicking on the download button at <b>[this link](https://github.com/chrismgentry/GIS1-Exercise-2/blob/main/Data/Shapefiles/ev_data.zip){style="color:#006400"}</b> and saving it in your exercise folder. Once the download is complete you will need to unzip the file by using _double-click_ on macOS or _right-click > extract all_ on PC.
 
 <p align="center"><img src= "Images/github-data-download.png" alt="Data Download from GitHub" style="width:100%"></p><br>
 
