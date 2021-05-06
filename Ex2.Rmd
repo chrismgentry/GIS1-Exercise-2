@@ -164,7 +164,7 @@ After the initial splash screen, you'll be greeted with a screen that allows you
 
 This will open a new _Create a New Project_&nbsp; screen that will ask you to give your new project a name and a location on your computer to save the project. At this point I would recommend creating a new folder somewhere on your PC to store all of your _GIS1_ exercises for the semester. This will make them easier to locate later on.
 
-<p align="center"><img src= "Images/arcgis-new-project.png" alt="Project name and location" style="width:100%"></p><br>
+<p align="center"><img src= "Images/arcgis-new-project.png" alt="Project name and location" width="520" height="175"></p><br>
 
 After establishing the project, a project file and several folders will be created in your folder, and your screen should appear similar to this:
 
@@ -180,7 +180,7 @@ This data should now be available for use in your project. To add the informatio
 
 Similar to other PC-based GUI interfaces, a new window will open where you will navigate to your data folder and double-click or single-click and click OK to add the data.
 
-<p align="center"><img src= "Images/arcgis-add-data.png" alt="Add data" style="width:100%"></p><br>
+<p align="center"><img src= "Images/arcgis-add-data.png" alt="Add data" width="675" height="465"></p><br>
 
 This will add the data to your map and it will appear in the table of contents. Your screen should now look similar to the one below (colors may vary):
 
@@ -237,13 +237,38 @@ Along the bottom of the map view there are several tools available including:
 
 The mouse can be used to navigate around the map view. The left-click button is used to pan or move the map around the screen and view pop-ups, the scroll wheel is used to zoom or rotate/tilt (3D), and righ-click is used for continuous zoom by clicking and moving the cursor up to zoom out and down to zoom in.
 
-<p align="center"><img src= "Images/arcgis-explore-tool.png" alt="Explore" width="320" height="270"></p><br>
+<p align="center"><img src= "Images/arcgis-explore-tool.png" alt="Explore" width="415" height="350"></p><br>
 
-Question No. 1
+On the **Map** tab there are a number of tools you should become familiar with as they will be useful throughout this course and beyond. Along with the _Add Data_ button you have already used, the _Fixed Zoom In/Out_ tools&nbsp; <img src= "Images/arcgis-zoom-tools.png" alt="Fixed Zoom Tools" width="40" height="20"> are used to adjust the level of zoom. The _Full Extent_ tool&nbsp; <img src= "Images/arcgis-full-extent.png" alt="Full Extent Tool" width="20" height="20"> is used to adjust the level of zoom to include the extent of all datasets. The _Previous Extent_ tool&nbsp; <img src= "Images/arcgis-previous-extent.png" alt="Previous Extent Tool" width="20" height="20"> is used to return the level of zoom to the previous level. There are a number of other tools you will use on this tab in future exercises. You should explore the different buttons on this tab to see what they do.
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-map-ribbon.png" alt="Map Toolbar" style="width:100%"></div></p><br>
+
+For this exercise you will familiarize yourself with another useful tool that allows you to examine information regarding the dataset. First, click on the _ev_data_ layer in the table of contents. Next, click on the _Explore_&nbsp; button <img src= "Images/arcgis-explore-button.png" alt="Explore Button" width="20" height="20"> and move the cursor over the map. Your cursor will become a hand with pointed finger. If you click on the state of Tennessee a pop-up window will appear that provides data about the state.
+
+<p align="center"><img src= "Images/arcgis-identify-tool.png" alt="Explore" width="625" height="380"></p><br>
+
+You can scroll down on the data in the pop-up window and examine each attribute in the table. Along the bottom of the window you will see tools that can be used to: print the information for the selected feature <img src= "Images/arcgis-pop-up-print.png" alt="Print the pop-up for this feature" width="20" height="20">, toggle selection on/off for the feature <img src= "Images/arcgis-pop-up-select.png" alt="Toggle selection on/off for this feature" width="20" height="20">, flash the selected feature <img src= "Images/arcgis-pop-up-flash.png" alt="Flash selected feature" width="20" height="20">, and to zoom to the selected feature <img src= "Images/arcgis-pop-up-zoom.png" alt="Zoom to selected feature" width="20" height="20">.
+
+This method is helpful for getting information about a specific portion of the dataset. You can view all of the underlying information in the attribute table by right-clicking on the _ev_data_ layer in the table of contents and clicking on **Attribute Table**.
+
+<p align="center"><img src= "Images/arcgis-rc-attribute-table.png" alt="Explore" width="345" height="200"></p><br>
+
+Alternatively while the _ev_data_ layer is selected in the table of contents you should see three new tabs highlighted in orange (color may vary) and titled **Feature Layer**. Under the **Data** tab you should see the _Attribute Table_ tool.
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-data-ribbon.png" alt="Map Toolbar" style="width:100%"></div></p><br>
+
+Whichever method you used to open the attribute table you should now have a new section on your screen that displays the attribute data for all of the features in the dataset. In a future exercise you will learn how to sort, query, and edit information within the attribute table. For now, examine the numerous variables available for each state. What is the column name and range of values for the electric vehicle charging stations?<br>
+<small>Hint: This information will be needed in the next section.</small>
+
+<p align="center"><img src= "Images/arcgis-attribute-table.png" alt="Attribute Table" style="width:100%"></p><br>
+
+<b><big>Question No. 1</big></b>
 <blockquote>
-_Insert Text Here_
+Using the identify tool, what is the population of Tennessee in 2010? What percentage of the population is female?<br><br>
+Using the attribute table, find the area (_SQMI_&nbsp;) of Colorado. How much larger is it than Wyoming?
 </blockquote>
 
+Type your answers in a word document. The answers will need to be submitted at the conclusion of this lab.
 </details>
 <hr></hr>
 
@@ -367,8 +392,36 @@ In this step you will organize and display the data in order to prepare it for t
 <details>
 <summary><big>View Directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></big></summary>
 
-_Insert Text Here_
+Now that you have the data displayed on the screen and understand how to access the underlying data, you need to customize the view so you can see the spatial distribution of electric vehicle charging stations in the US. As you may have guessed by now, there are a number of different ways to access the symbology tool needed to change how the data is displayed. 
 
+1. Right-click on _ev_data_ in the table of contents and click **Symbology**
+2. With _ev_data_ selected in the table of contents click on the _Apperance_ Tab and click the **Symbology** button
+3. With _ev_data_ selected in the table of contents click on the **Symbology** tab at the bottom of the right side panel of the screen.
+
+All three of these methods will show the symbology options in a panel on the right side of the screen. From here you will need to change the _Primary Symbology_ from **Single Symbol** to **Graduated Color**. This can also be done by clicking on the drop-down menu for **Symbology** in the _Apperance_ Tab.
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-symbology-tab.png" alt="Symbology" style="width:100%"></div></p>
+
+After selecting _Graduated Colors_ you will have several other options available in the symbology window. In order to sort by the number of electric vehicle charging stations per state you will need to change the _Field_ category to **ev_station**. Next, in the _Method_ category to **Geometric Interval**. Because of the range of values, choosing this option will help to balance out the bias of larger values. In the _Classes_ category choose 5. Finally using the drop-down menu next to _Color Scheme_, select a color option for your visualization.
+
+<p align="center"><img src= "Images/arcgis-viridis.png" alt="Symbology options" width="300" height="525"></p><br>
+
+Depending on the color scheme you chose, your screen should now look similar to this:
+
+<p align="center"><img src= "Images/arcgis-ev-display.png" alt="Symbology" style="width:100%"></p>
+
+On the left in the table of contents beneath the _ev_data_&nbsp; layer you will see the range of values represented by each color matching those values for each individual state on your map. At this point you should save your work. This can be done by going to the _Project Tab > Save_&nbsp;, using the _CRTL+S_&nbsp; keyboard shortcut, or using the quick save button <img src= "Images/arcgis-quick-save.png" alt="Save project" width="20" height="20">&nbsp; to save your current project.
+
+<big><b>Question No. 2</b></big><br>
+In this step you used a _Graduated Colors_&nbsp; symbology to visualize the data and organized the values using a **Geometric Interval** method. There are several other options within _Method_ that could have been selected as a display method such as: 
+
+<p align="center"><img src= "Images/arcgis-symbology-method.png" alt="Symbology methods" width="320" height="585"></p><br>
+
+<blockquote>
+Adjusting the _Method_ value, describe how the visualization changes with each of these different options.
+</blockquote>
+
+Record your answers and submit at the conclusion of the lab.
 </details>
 <hr></hr>
 
