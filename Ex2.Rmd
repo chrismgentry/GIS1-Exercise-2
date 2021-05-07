@@ -193,45 +193,49 @@ With this dataset added, you can now begin to explore some of the basic tools fo
 
 Along the bottom of the map view there are several tools available including: 
 
-<table style="width:100%;margin-left:auto;margin-right:auto;">
+<table style="width:100%">
+  <colgroup>
+       <col style="width: 30%;">
+       <col style="width: 70%;">
+  </colgroup>
   <tr>
-    <td><li>Representative Fraction</li></td>
+    <td>Representative Fraction</td>
     <td>Unit-less relation between map units and real-world units (e.g. 1 unit equals 30,000 units)</td>
   </tr>
   <tr>
-    <td><li>Snapping</li></td>
+    <td>Snapping</td>
     <td>Moving a feature to match or coincide exactly with another point or feature's coordinates when your pointer is within a specified distance or tolerance</td>
   </tr>
   <tr>
-    <td><li>Constraints</li></td>
+    <td>Constraints</td>
     <td>Limits imposed on a model to maintain data integrity</td>
   </tr>
   <tr>
-    <td><li>Grid</li></td>
+    <td>Grid</td>
     <td>A network of parallel and perpendicular lines superimposed on a map and used for reference</td>
   </tr>
   <tr>
-    <td><li>Inference</li></td>
+    <td>Inference</td>
     <td>Analyzes the segment of the active sketch over which the pointer is hovering and displays inferred geometric constraints</td>
   </tr>
   <tr>
-    <td><li>Corrections</li></td>
+    <td>Corrections</td>
     <td>Set grid corrections and offset</td>
   </tr>
   <tr>
-    <td><li>X,Y Coordinates</li></td>
+    <td>X,Y Coordinates</td>
     <td>X,Y location of the cursor; can be set to decimal degrees, degrees minutes seconds, degree decimal minutes, military grid reference system, national grid, or universal transverse mercator</td>
   </tr>
   <tr>
-    <td><li>Selected Features</li></td>
+    <td>Selected Features</td>
     <td>Depicts the number of items selected from a feature set</td>
   </tr>
   <tr>
-    <td><li>Pausing Drawing</li></td>
+    <td>Pausing Drawing</td>
     <td>Stops the drawing of layers on the map view</td>
   </tr>
   <tr>
-    <td><li>Refresh</li></td>
+    <td>Refresh</td>
     <td>Reloads the map view</td>
   </tr>
 </table>
@@ -613,7 +617,22 @@ Each time you add an element such as a north arrow or scale bar, you will notice
 
 <p align="center"><div class="zoom"><img src= "Images/arcgis-add-elements.png" alt="Add element options for north arrow" style="width:100%"></div></p>
 
-These will provide additional customization options for each element.
+These will provide additional customization options for each element. When adding the **Legend**, notice that the information from the layer is added to the element. While you will examine how to customize all elements in future exercises, for this lab you will edit the names of the _layer name_ and _heading_ for the layer. This will update the information automatically in the legend. To begin, click once on the _ev_data_ layer name in the table of contents. This will select the item. By single clicking an additional time (not double-clicking) it will allow you to directly edit the data. 
+
+<p align="center"><img src= "Images/arcgis-edit-legend-text.png" alt="Edit layer name and heading" width="455" height="330"></p><br>
+
+Rename the layer **Charging Stations** and rename the _ev_station_ heading to **Number per State**. Depending on placement and symbology color, your legend should now look like this:
+
+<p align="center"><img src= "Images/arcgis-edited-legend.png" alt="New legend layer name and heading" width="190" height="185"></p><br>
+
+Depending on where you placed your elements and customizations you employed, you should now have a completed map that includes all of the necessary elements discussed above.
+
+<p align="center"><img src= "Images/arcgis-ex2-map.png" alt="Exercise 2 example map" style="width:100%"></p>
+
+<big><b>Question No. 3</b></big>
+<blockquote>
+What is the largest and smallest number of electric vehicle charging stations?
+</blockquote>
 
 </details>
 <hr></hr>
@@ -836,7 +855,25 @@ Software specific directions can be found for each step below. Please submit the
 
 <details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
 
-_Insert Text Here_
+This portion of the exercise is meant to reinforce the skills you learned in the first part of the lab. The steps to complete your final map will be to:
+
+1. Download and unzip the tornadoes dataset
+2. Create a new map project
+3. Add the data to your layers
+4. Use the symbology tab to color the counties by number of tornadoes (**tornado_co**)
+5. Map the data including all the necessary elements added above
+
+To begin this portion of the exercise you will need to download the [tornado dataset](https://github.com/chrismgentry/GIS1-Exercise-2/raw/main/Data/Shapefiles/tornado_data.zip). Remember you can use the pop-up tool or the attribute table to examine the information. When you have completed your map, click the _Share Tab_ and click _Layout_ to save your map.
+
+<p align="center"><div class="zoom"><img src="Images/arcgis-image-save.png" alt="Export map as image" style="width:100%"></div></p>
+
+You will have a new **Export** section on the right-side of the screen. In the _Properties_ options change the _File Type_ to _\*.jpg_. This will allow you to add it to your word document and be submitted at the end of this exercise. In _Name_ click the browse button <img src= "Images/arcgis-browse-button.png" alt="Browse button to save layout" width="20" height="20"> to save the layout. It will default to the project folder and you can provide a name to identify the file. When done click _Save_ in the browser window, leave the other options as the default setting, and **Export** at the bottom of the section.
+
+<big><b>Question No. 4</b></big>
+<blockquote>
+Which county had the highest number of reported tornadoes?<br>
+<small>Hint: Remember you can sort the data in any column by clicking on the column header.</small>
+</blockquote>
 
 </details>
 <hr></hr>
@@ -846,9 +883,10 @@ _Insert Text Here_
 This portion of the exercise is meant to reinforce the skills you learned in the first part of the lab. The steps to complete your final map will be to:
 
 1. Download and unzip the tornadoes dataset
-2. Add the data to your layers
-3. Use the symbology tab to color the counties by number of tornadoes (**tornado_co**)
-4. Map out the data including all the necessary elements added above
+2. Create a new map project
+3. Add the data to your layers
+4. Use the symbology tab to color the counties by number of tornadoes (**tornado_co**)
+5. Map the data including all the necessary elements added above
 
 To begin this portion of the exercise you will need to download the [tornado dataset](https://github.com/chrismgentry/GIS1-Exercise-2/raw/main/Data/Shapefiles/tornado_data.zip). Remember you can use the identity tool or the attribute table to examine the information. When you have completed your map, click _Project > Export as Image..._ on PC or _Project > Import/Export > Export Map to Image..._ on macOS to save your map as a _\*.jpg_. This will allow you to add it to your word document and be submitted at the end of this exercise.
 
@@ -914,4 +952,4 @@ The Montgomery County Emergency Management Agency has asked you to provide a map
 - Describe which regions of Tennessee had the fewest reported tornadoes 
 - Inform MCEMA which metropolitan regions could be most impacted by future severe weather events
 
-When complete, send a link to your _Colab Notebook_ or word document with answers to Questions 1-4 and your completed map via email.
+When complete, send a link to your _Colab Notebook_ or email the word document or PDF with answers to Questions 1-4 and your completed map.
