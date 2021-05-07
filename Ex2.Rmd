@@ -30,7 +30,8 @@ h1.title {
   color: DarkBlue;
   text-align: center;
 }
-h4.author { /* Header 4 - and the author and data headers use this too  */
+
+h4.author { 
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: DarkBlue;
@@ -42,10 +43,12 @@ h4.author { /* Header 4 - and the author and data headers use this too  */
   transition: transform .2s;
   margin: 0 auto;
 }
+
 .zoom img{
 	width:auto;
-	height:auto;	
+	height:auto;
 }
+
 .zoom:hover {
   transform: scale(2);
 }
@@ -415,7 +418,7 @@ On the left in the table of contents beneath the _ev_data_&nbsp; layer you will 
 <big><b>Question No. 2</b></big><br>
 In this step you used a _Graduated Colors_&nbsp; symbology to visualize the data and organized the values using a **Geometric Interval** method. There are several other options within _Method_ that could have been selected as a display method such as: 
 
-<p align="center"><img src= "Images/arcgis-symbology-method.png" alt="Symbology methods" width="320" height="585"></p><br>
+<p align="center"><img src= "Images/arcgis-symbology-method.png" alt="Symbology methods" width="225" height="410"></p><br>
 
 <blockquote>
 Adjusting the _Method_ value, describe how the visualization changes with each of these different options.
@@ -549,7 +552,68 @@ You will learn how to create a graphical display of your data that includes cart
 
 <details><summary><big>View directions in <b> [ArcGIS Pro]{style="color:#ff4500"} </b></span></big></summary>
 
-_Insert Text Here_
+Now it’s time to turn your data into a map. From the _Insert_ Tab click on the **New Layout** button <img src= "Images/arcgis-new-layout-button.png" alt="New layout button" width="20" height="20"> and choose a paper layout. For this exercise you should choose _ANSI - Landscape, Letter 8.5" x 11"_. This will open a new section where you will add the data, title, legend, north arrow, scale bar, and your name and date. If you have a large enough screen, you can right-click on the new layout <img src= "Images/arcgis-layout.png" alt="Layout tab" width="80" height="20"> and select **Float**. This will create a new window that you can resize while keeping the primary screen open. Otherwise, resize the layout section as necessary by moving your cursor between the two sections to adjust the border. 
+
+<p align="center"><img src= "Images/arcgis-layout-map.png" alt="Side-by-side Map and Layout" style="width:100%"></p>
+
+Whether viewing the new layout in a new window or section on the map page, click on the _Insert_ tab and choose the **Map Frame** button. From there, select the map that has a representative fraction and has an image of the data from the map view. 
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-map-insert-ribbon.png" alt="Map Insert Tab" style="width:100%"></div></p>
+
+When placed over the layout our cursor will become cross-hairs (+). Use it to draw the location of the map on the layout.
+
+<p align="center"><img src= "Images/arcgis-draw-map-frame.png" alt="Insert the map frame" style="width:100%"></p>
+
+Your map will now be imported to the layout. To zoom in or out you can adjust the representative fraction at the bottom of the layout or on the _Layout_ tab use the **fixed zoom** tools <img src= "Images/arcgis-zoom-tools.png" alt="Fixed zoom tools" width="40" height="20"> to change the level of zoom. 
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-map-layout-ribbon.png" alt="Map Layout Tab" style="width:100%"></div></p>
+
+To adjust the location of the data, click the **Activate** button <img src= "Images/arcgis-activate-button.png" alt="Navigate Button" width="20" height="20"> and use the **Explore Button** <img src= "Images/arcgis-explore-button.png" alt="Navigate Button" width="20" height="20"> to click and drag and move the data on the map frame on the layout. When finished adjusting the view deactivate the layout by clicking the _Close activated map frame_ button <img src= "Images/arcgis-return-layout.png" alt="Close activate map frame" width="150" height="20"> to return to the map layout. After you have adjusted the zoom and positioning your layout should look like this:
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-layout-image.png" alt="Map and Layout" style="width:100%"></div></p>
+
+In order to complete a basic map you will need to add a north arrow <img src= "Images/arcgis-north-button.png" alt="Add north arrow" width="20" height="20">, scale bar <img src= "Images/arcgis-scale-button.png" alt="Add scale" width="20" height="20">, legend <img src= "Images/arcgis-legend-button.png" alt="Add legend" width="20" height="20">, and text <img src= "Images/arcgis-text-button.png" alt="Add text" width="20" height="20"> to include a title and the name and date of the map creator. Each of these items works essentially the same as adding the map data. When you click on each tool you can use your cursor to draw its location on the map. You will notice with the north arrow and scale bar there is a drop-down menu that allows you to select the specific style.
+
+<p align="center"><img src= "Images/arcgis-item-drop-down.png" alt="Drop-down information for north arrow and scale bar" style="width:100%"></p>
+
+Each time you add an element such as a north arrow or scale bar, you will notice the section on the right will provide a number of different options to customize the element. Depending on the element you are adding there will be different buttons such as:
+
+<table style="width:100%">
+  <colgroup>
+       <col style="width: 20%;">
+       <col style="width: 10%;">
+       <col style="width: 70%;">
+  </colgroup>
+  <tr>
+    <td>Options</td>
+    <td><img src= "Images/arcgis-element-options.png" alt="Options button" width="20" height="20"></td>
+    <td>Allows you to make elements visible or locked, change the title of the element, adjust the labels, or add columns</td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td><img src= "Images/arcgis-element-display.png" alt="Display button" width="20" height="20"></td>
+    <td>Lets you adjust the border, background, or add a shadow to the element</td>
+  </tr>
+  <tr>
+    <td>Placement</td>
+    <td><img src= "Images/arcgis-element-placement.png" alt="Placement button" width="20" height="20"></td>
+    <td>Allows you to fine tune adjust the location of the element on the map and change the appearance  and format of the text symbol of the element</td>
+  </tr>
+  <tr>
+    <td>Properties</td>
+    <td><img src= "Images/arcgis-element-properties.png" alt="Properties button" width="20" height="20"></td>
+    <td>This is specific to the scale bar and lets you adjust the number of divisions, numbers, marks, and bars of the element</td>
+  </tr>
+  <tr>
+    <td>Arrangement</td>
+    <td><img src= "Images/arcgis-element-arrangements.png" alt="Arrangement button" width="20" height="20"></td>
+    <td>Legend arrangement options allows you to adjust the fitting strategy, word wrap, and spacing of items within the element</td>
+  </tr>
+</table><br>
+
+<p align="center"><div class="zoom"><img src= "Images/arcgis-add-elements.png" alt="Add element options for north arrow" style="width:100%"></div></p>
+
+These will provide additional customization options for each element.
 
 </details>
 <hr></hr>
