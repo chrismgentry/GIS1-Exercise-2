@@ -814,7 +814,7 @@ ggplot(states) +
 
 As with all of the other customizations above, feel free to adjust the units, distance, text distance, and size based on your own style.
 
-Finally, you will need to add text to the map to indicate the name of the person who created the map and the date. In the future you will possibly include references or other text based information. There are a number of different ways you will explore for adding text information to your maps, such as ```caption = ``` in labs, but for this example you will use ```annotate()```. Similar to the north arrow and scale bar, there will be a
+Finally, you will need to add text to the map to indicate the name of the person who created the map and the date. In the future you will possibly include references or other text based information. There are a number of different ways you will explore for adding text information to your maps, such as ```caption = ``` in labs, but for this example you will use ```annotate()```. Similar to the north arrow and scale bar, there will be a:
 
 - _x_ and _y_ argument to set the location
 - size to indicate the font size
