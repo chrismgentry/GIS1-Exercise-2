@@ -165,7 +165,7 @@ After the initial splash screen, you'll be greeted with a screen that allows you
 
 <p align="center"><img src= "Images/arcgis-splash-screen.png" alt="ArcGIS Pro Open Screen" style="width:100%"></p><br>
 
-This will open a new _Create a New Project_&nbsp; screen that will ask you to give your new project a name and a location on your computer to save the project. At this point I would recommend creating a new folder somewhere on your PC to store all of your _GIS1_ exercises for the semester. This will make them easier to locate later on.
+This will open a new _Create a New Project_&nbsp; screen that will ask you to give your new project a name and a location on your computer to save the project. At this point I would recommend creating a folder somewhere on your PC to store all of your _GIS1_ exercises. If you are in a GIS class using a networked folder, be sure to have that folder mapped and save all of your data under the project folder for this exercise. This will make them easier to locate later on.
 
 <p align="center"><img src= "Images/arcgis-new-project.png" alt="Project name and location" width="520" height="175"></p><br>
 
@@ -271,7 +271,7 @@ Whichever method you used to open the attribute table you should now have a new 
 
 <b><big>Question No. 1</big></b>
 <blockquote>
-Using the identify tool, what is the population of Tennessee in 2010? What percentage of the population is female?<br><br>
+Using the explore tool, what is the population of Tennessee in 2010 (POP2010)? What percentage of the population is female?<br><br>
 Using the attribute table, find the area (_SQMI_&nbsp;) of Colorado. How much larger is it than Wyoming?
 </blockquote>
 
@@ -292,7 +292,7 @@ To start the QGIS program press the _Start Menu > QGIS_ or launch the applicatio
 
 <p align="center"><div class="zoom"><img src= "Images/qgis-temp.png" alt="QGIS Start Screen" style="width:100%"></div></p><br>
 
-The screen depicted below is separated into two sections. To the left there is the _Browser_ and _Layers_ sections, and on the right is the _Map Canvas_. Your version may vary slightly from the images. There are a number of ways to add data, but in this example we are going to use the browser window to connect to our ESRI Data folder.
+The screen depicted below is separated into two sections. To the left there is the _Browser_ and _Layers_ sections, and on the right is the _Map Canvas_. Your version may vary slightly from the images. There are a number of ways to add data, but in this example we are going to use the browser window to connect to our project data folder.
 
 <p align="center"><div class="zoom"><img src= "Images/qgis-proj.png" alt="QGIS Start Screen" style="width:100%"></div></p><br>
 
