@@ -544,7 +544,7 @@ Now you will see the columns for **evs** and **abbreviation** included in the **
 
 <big><b>Question No. 2</b></big>
 <blockquote>
-Using ```sum(states)``` in a new code cell, what are the largest and smallest number of electric vehicle charging stations?
+Using ```summary(states)``` in a new code cell, what are the largest and smallest number of electric vehicle charging stations?
 </blockquote>
 
 </details>
